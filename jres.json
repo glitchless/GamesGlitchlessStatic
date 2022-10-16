@@ -23,8 +23,8 @@
   {
     "type": "macOS",
     "arch": "arm",
-    "extension": "tar.gz",
-    "downloadUrl": "https://download.bell-sw.com/java/8u345+1/bellsoft-jre8u345+1-macos-aarch64-full.tar.gz",
+    "extension": "zip",
+    "downloadUrl": "https://minecraft.glitchless.ru/jres/bellsoft-jre8u345+1-macos-aarch64-full.zip",
     "javaRelativePath": "jre8u282-full.jre/bin/java"
   }
 ]
