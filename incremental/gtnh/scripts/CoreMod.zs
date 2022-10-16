@@ -9,7 +9,6 @@ import mods.gregtech.Autoclave;
 import mods.gregtech.Brewery;
 import mods.gregtech.Centrifuge;
 import mods.gregtech.ChemicalBath;
-import mods.gregtech.ChemicalReactor;
 import mods.ic2.Compressor;
 import mods.gregtech.CuttingSaw;
 import mods.gregtech.Distillery;
@@ -20,7 +19,6 @@ import mods.gregtech.ForgeHammer;
 import mods.gregtech.FormingPress;
 import mods.gregtech.Lathe;
 import mods.gregtech.Pulverizer;
-import mods.gregtech.Mixer;
 import mods.gregtech.PlateBender;
 import mods.gregtech.PrecisionLaser;
 import mods.gregtech.VacuumFreezer;
@@ -30,7 +28,6 @@ import mods.gregtech.Wiremill;
 
 // --- Variables ---
 
-val BlankPattern = <TConstruct:blankPattern>;
 val BlankCast = <TConstruct:blankPattern:1>;
 
 val SandstoneRod = <dreamcraft:item.SandStoneRod>;
@@ -46,7 +43,6 @@ val Saw = <ore:craftingToolSaw>;
 val Screwdriver = <ore:craftingToolScrewdriver>;
 val Mortar = <ore:craftingToolMortar>;
 val WireCutter = <ore:craftingToolWireCutter>;
-val WoodenBrickForm = <dreamcraft:item.WoodenBrickForm>.transformReplace(<dreamcraft:item.WoodenBrickForm>);
 
 val MagicalWood = <ExtraUtilities:decorativeBlock1:8>;
 val SilverwoodLog = <Thaumcraft:blockMagicalLog:1>;
@@ -530,60 +526,6 @@ recipes.addShaped(<dreamcraft:item.SawBladePeridot>, [
 [<ore:platePeridot>, <ore:platePeridot>, null],
 [File, Hammer, null]]);
 
-// --- Reinforced Aluminium Iron Plate
-recipes.addShaped(<dreamcraft:item.ReinforcedAluminiumIronPlate>, [
-[<ore:plateAlloyAdvanced>, <ore:plateAlloyCarbon>, <ore:plateAlloyAdvanced>],
-[<ore:plateAlloyCarbon>, <dreamcraft:item.AluminiumIronPlate>, <ore:plateAlloyCarbon>],
-[<ore:plateAlloyAdvanced>, <ore:plateAlloyCarbon>, <ore:plateAlloyAdvanced>]]);
-
-// --- Reinforced Titanium Iron Plate
-recipes.addShaped(<dreamcraft:item.ReinforcedTitaniumIronPlate>, [
-[<ore:plateAlloyAdvanced>, <ore:plateSilicon>, <ore:plateAlloyAdvanced>],
-[<ore:plateSilicon>, <dreamcraft:item.TitaniumIronPlate>, <ore:plateSilicon>],
-[<ore:plateAlloyAdvanced>, <ore:plateSilicon>, <ore:plateAlloyAdvanced>]]);
-
-// --- Reinforced Chrome Iron Plate
-recipes.addShaped(<dreamcraft:item.ReinforcedChromeIronPlate>, [
-[<ore:plateAlloyAdvanced>, <ore:plateDiamond>, <ore:plateAlloyAdvanced>],
-[<ore:plateDiamond>, <dreamcraft:item.ChromeIronPlate>, <ore:plateDiamond>],
-[<ore:plateAlloyAdvanced>, <ore:plateDiamond>, <ore:plateAlloyAdvanced>]]);
-
-// --- Reinforced Tungsten Iron Plate
-recipes.addShaped(<dreamcraft:item.ReinforcedTungstenIronPlate>, [
-[<ore:plateAlloyAdvanced>, <ore:plateTungsten>, <ore:plateAlloyAdvanced>],
-[<ore:plateTungsten>, <dreamcraft:item.TungstenIronPlate>, <ore:plateTungsten>],
-[<ore:plateAlloyAdvanced>, <ore:plateTungsten>, <ore:plateAlloyAdvanced>]]);
-
-// --- Reinforced Tungsten Steel Iron Plate
-recipes.addShaped(<dreamcraft:item.ReinforcedTungstenSteelIronPlate>, [
-[<ore:plateAlloyAdvanced>, <ore:plateTungstenSteel>, <ore:plateAlloyAdvanced>],
-[<ore:plateTungstenSteel>, <dreamcraft:item.TungstenSteelIronPlate>, <ore:plateTungstenSteel>],
-[<ore:plateAlloyAdvanced>, <ore:plateTungstenSteel>, <ore:plateAlloyAdvanced>]]);
-
-// --- Reinforced Iridium Iron Plate
-recipes.addShaped(<AdvancedSolarPanel:asp_crafting_items:7>, [
-[<ore:plateAlloyAdvanced>, <ore:plateAlloyIridium>, <ore:plateAlloyAdvanced>],
-[<ore:plateAlloyIridium>, <AdvancedSolarPanel:asp_crafting_items:6>, <ore:plateAlloyIridium>],
-[<ore:plateAlloyAdvanced>, <ore:plateAlloyIridium>, <ore:plateAlloyAdvanced>]]);
-
-// --- Reinforced Naquadria Iron Plate
-recipes.addShaped(<dreamcraft:item.ReinforcedNaquadriaIronPlate>, [
-[<ore:plateAlloyAdvanced>, <ore:plateMysteriousCrystal>, <ore:plateAlloyAdvanced>],
-[<ore:plateMysteriousCrystal>, <dreamcraft:item.NaquadriaIronPlate>, <ore:plateMysteriousCrystal>],
-[<ore:plateAlloyAdvanced>, <ore:plateMysteriousCrystal>, <ore:plateAlloyAdvanced>]]);
-
-// --- Reinforced Neutronium Iron Plate
-recipes.addShaped(<dreamcraft:item.ReinforcedNeutroniumIronPlate>, [
-[<ore:plateAlloyAdvanced>, <ore:plateBlackPlutonium>, <ore:plateAlloyAdvanced>],
-[<ore:plateBlackPlutonium>, <dreamcraft:item.NeutroniumIronPlate>, <ore:plateBlackPlutonium>],
-[<ore:plateAlloyAdvanced>, <ore:plateBlackPlutonium>, <ore:plateAlloyAdvanced>]]);
-
-// --- Reinforced Bedrockium Iron Plate
-recipes.addShaped(<dreamcraft:item.ReinforcedBedrockiumIronPlate>, [
-[<ore:plateAlloyAdvanced>, <ore:plateDraconiumAwakened>, <ore:plateAlloyAdvanced>],
-[<ore:plateDraconiumAwakened>, <dreamcraft:item.BedrockiumIronPlate>, <ore:plateDraconiumAwakened>],
-[<ore:plateAlloyAdvanced>, <ore:plateDraconiumAwakened>, <ore:plateAlloyAdvanced>]]);
-
 // --- Bow Fletching Cast
 recipes.addShaped(<dreamcraft:item.BowFletchingCast>, [
 [null, null, Hammer],
@@ -914,10 +856,6 @@ recipes.addShaped(<dreamcraft:item.OvenGlove:1>.withTag({Durability: 1000}), [
 // -
 recipes.addShapeless(<dreamcraft:item.OvenGlove:1>.withTag({Durability: 1000}), [<dreamcraft:item.OvenGlove:1>, <ore:itemLeather>, <ore:itemLeather>, <ore:itemLeather>]);
 
-// --- Wooden Brick Form
-recipes.addShaped(<dreamcraft:item.WoodenBrickForm>, [
-[Knife, BlankPattern, null]]);
-
 // --- Coke Oven Bricks
 furnace.addRecipe(<dreamcraft:item.CokeOvenBrick>, <dreamcraft:item.UnfiredCokeOvenBrick>);
 
@@ -940,28 +878,6 @@ recipes.addShaped(<dreamcraft:item.MoldFormCoinage>, [
 
 
 
-// --- Piston Block
-Assembler.addRecipe(<dreamcraft:tile.PistonBlock>, <minecraft:cobblestone>, <gregtech:gt.metaitem.02:20032>, <liquid:molten.redstone> * 72, 100, 30);
-// -
-Assembler.addRecipe(<dreamcraft:tile.PistonBlock>, <minecraft:cobblestone>, <gregtech:gt.metaitem.02:20304>, <liquid:molten.redstone> * 72, 100, 30);
-
-// --- Piston Plate
-Assembler.addRecipe(<dreamcraft:item.PistonPlate>, <gregtech:gt.metaitem.02:32470> * 6, <minecraft:fence>, 100, 30);
-// -
-Assembler.addRecipe(<dreamcraft:item.PistonPlate>, <gregtech:gt.metaitem.02:32470> * 6, <ExtraTrees:fence:*>, 100, 30);
-// -
-Assembler.addRecipe(<dreamcraft:item.PistonPlate>, <gregtech:gt.metaitem.02:32470> * 6, <Forestry:fences:*>, 100, 30);
-// -
-Assembler.addRecipe(<dreamcraft:item.PistonPlate>, <gregtech:gt.metaitem.02:32470> * 6, <Forestry:fencesFireproof:*>, 100, 30);
-// -
-Assembler.addRecipe(<dreamcraft:item.PistonPlate>, <gregtech:gt.metaitem.02:32470> * 6, <Natura:Natura.fence:*>, 100, 30);
-
-// --- Piko Circuit
-//Assembler.addRecipe(<dreamcraft:item.PikoCircuit>, <dreamcraft:item.NanoProcessorBoard>, <dreamcraft:item.EngravedManyullynCrystalChip> * 4, <liquid:molten.tin> * 864, 600, 30720);
-// -
-//Assembler.addRecipe(<dreamcraft:item.PikoCircuit>, <dreamcraft:item.NanoProcessorBoard>, <dreamcraft:item.EngravedManyullynCrystalChip> * 4, <liquid:molten.solderingalloy> * 432, 600, 30720);
-// -
-//Assembler.addRecipe(<dreamcraft:item.PikoCircuit>, <dreamcraft:item.NanoProcessorBoard>, <dreamcraft:item.EngravedManyullynCrystalChip> * 4, <liquid:molten.lead> * 1782, 600, 30720);
 
 // --- Enriched Naquadria Sunnarium Alloy
 Assembler.addRecipe(<dreamcraft:item.EnrichedNaquadriaSunnariumAlloy>, <AdvancedSolarPanel:asp_crafting_items:4>, <gregtech:gt.metaitem.01:22327>, 2000, 500000);
@@ -1001,15 +917,6 @@ Assembler.addRecipe(<dreamcraft:item.BioChunk>, <gregtech:gt.blockgem3:4>, <drea
 
 // --- Diamond Frame Box
 Assembler.addRecipe(<dreamcraft:tile.DiamondFrameBox>, <gregtech:gt.metaitem.01:23500> * 4, <gregtech:gt.integrated_circuit:4> * 0, 64, 8);
-
-// --- 10k Cell
-Assembler.addRecipe(<dreamcraft:item.TenKCell>, <IC2:itemCellEmpty>, <gregtech:gt.metaitem.01:17057> * 4, 100, 30);
-
-// --- 30k Cell
-Assembler.addRecipe(<dreamcraft:item.ThirtyKCell>, <dreamcraft:item.TenKCell> * 3, <gregtech:gt.integrated_circuit:3> * 0, 300, 60);
-
-// --- 60k Cell
-Assembler.addRecipe(<dreamcraft:item.SixtyKCell>, <dreamcraft:item.ThirtyKCell> * 2, <gregtech:gt.integrated_circuit:2> * 0, 600, 90);
 
 // --- Compressed Graphite Block
 Assembler.addRecipe(<dreamcraft:tile.CompressedGraphite> * 2, <minecraft:stone> * 2, <gregtech:gt.metaitem.01:2865>, 100, 8);
@@ -1184,15 +1091,6 @@ null, <gregtech:gt.metaitem.01:17526>, null,
 null, <minecraft:piston>, null,
 null, null, null],
 <Forestry:sturdyMachine>, <dreamcraft:item.EngineCore>);
-
-
-
-// --- Chemical Reactor Recipes ---
-
-
-
-// --- Potassium Hydroxide
-ChemicalReactor.addRecipe(<dreamcraft:item.PotassiumHydroxideDust> * 3, <liquid:hydrogen> * 1000, <gregtech:gt.metaitem.01:2025>, <gregtech:gt.integrated_circuit:1> * 0, <liquid:water> * 3000, 1200, 30);
 
 
 
@@ -1554,23 +1452,6 @@ Pulverizer.addRecipe([<dreamcraft:item.ChargedCertusQuartzDust>], <dreamcraft:it
 
 
 
-
-// --- Mixer Recipes
-
-
-// --- Sodium potassium
-Mixer.addRecipe(null, <liquid:sodiumpotassium> * 1000, [<gregtech:gt.metaitem.01:2017> * 2, <gregtech:gt.metaitem.01:2025> * 3], null, 400, 30);
-
-// --- Bio Ball
-Mixer.addRecipe(<dreamcraft:item.BioBall>, [<IC2:itemFuelPlantBall> * 16, <gregtech:gt.metaitem.01:2802> * 2], 200, 16);
-
-// --- Wet Tofu
-Mixer.addRecipe(<dreamcraft:item.WetTofu>, null, [<harvestcraft:soybeanItem>], <liquid:water> * 100, 600, 2);
-// -
-Mixer.addRecipe(<dreamcraft:item.WetTofu>, null, [<harvestcraft:soybeanItem>], <liquid:ic2distilledwater> * 50, 300, 4);
-
-
-
 // --- Plate Bender Recipes
 
 
@@ -1696,7 +1577,7 @@ mods.thaumcraft.Research.addPrereq("PORTALDEEPDARK", "ICHOR", false);
 mods.thaumcraft.Research.setConcealed("PORTALDEEPDARK", true);
 mods.thaumcraft.Research.addPage("PORTALDEEPDARK", "ExtraUtilities.research_page.PORTALDEEPDARK");
 game.setLocalization("ExtraUtilities.research_page.PORTALDEEPDARK", "As an experienced miner you naturally wish to mine deeper and further than ever before into areas of natural wealth. The deep dark is a realm far below the void, filled with natural resources and deadly enemies. Some say that the darkness within this realm is alive and will consume any unlucky adventurer who wanders too far into it. Remember to bring torches. Torches will not protect you completely, however since mobs will spawn at all light levels in the Deep Dark. Magnum torches and Chandeliers will still prevent mob spawning.");
-mods.thaumcraft.Infusion.addRecipe("PORTALDEEPDARK", <gregtech:gt.blockreinforced:12>, [<gregtech:gt.metaitem.01:32679>, <eternalsingularity:eternal_singularity>, <gregtech:gt.metaitem.01:32679>, <eternalsingularity:eternal_singularity>, <gregtech:gt.metaitem.01:32679>, <eternalsingularity:eternal_singularity>, <gregtech:gt.metaitem.01:32679>, <eternalsingularity:eternal_singularity>], "vacuos 512, tempus 512, luxuria 512, alienis 512, terminus 512, gula 512, superbia 512" ,  <ExtraUtilities:dark_portal>, 64);
+mods.thaumcraft.Infusion.addRecipe("PORTALDEEPDARK", <gregtech:gt.blockreinforced:12>, [<gregtech:gt.metaitem.01:32046>, <eternalsingularity:eternal_singularity>, <gregtech:gt.metaitem.01:32046>, <eternalsingularity:eternal_singularity>, <gregtech:gt.metaitem.01:32046>, <eternalsingularity:eternal_singularity>, <gregtech:gt.metaitem.01:32046>, <eternalsingularity:eternal_singularity>], "vacuos 512, tempus 512, luxuria 512, alienis 512, terminus 512, gula 512, superbia 512" ,  <ExtraUtilities:dark_portal>, 32);
 mods.thaumcraft.Research.addInfusionPage("PORTALDEEPDARK", <ExtraUtilities:dark_portal>);
 mods.thaumcraft.Warp.addToResearch("PORTALDEEPDARK", 64);
 
