@@ -1208,19 +1208,19 @@ recipes.addShaped(Ladder * 8, [
 
 // --- Fence
 recipes.addShaped(Fence, [
-[Stick, Plank, Stick],
-[Stick, Plank, Stick],
-[Stick, Plank, Stick]]);
+[Stick, <minecraft:planks>, Stick],
+[Stick, <minecraft:planks>, Stick],
+[Stick, <minecraft:planks>, Stick]]);
 // -
 recipes.addShaped(Fence * 2, [
 [IronScrew, Screwdriver, IronScrew],
-[Stick, Plank, Stick],
-[Stick, Plank, Stick]]);
+[Stick, <minecraft:planks>, Stick],
+[Stick, <minecraft:planks>, Stick]]);
 // -
 recipes.addShaped(Fence * 4, [
 [SteelScrew, Screwdriver, SteelScrew],
-[Stick, Plank, Stick],
-[Stick, Plank, Stick]]);
+[Stick, <minecraft:planks>, Stick],
+[Stick, <minecraft:planks>, Stick]]);
 // -
 recipes.addShaped(Fence * 2, [
 [null, null, null],
@@ -2713,60 +2713,6 @@ recipes.addShaped(<minecraft:gold_nugget> * 9, [
 [null, null, null]]);
 
 
-// --- Charcoal
-mods.railcraft.BlastFurnace.addRecipe(<minecraft:log:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<minecraft:log2:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<BiomesOPlenty:logs1:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<BiomesOPlenty:logs2:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<BiomesOPlenty:logs3:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<BiomesOPlenty:logs4:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<ExtraTrees:log:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<Forestry:logsFireproof:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<Forestry:logs:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<Natura:tree:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<Natura:redwood:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<Natura:willow:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<Natura:Dark Tree:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<Natura:Rare Tree:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<Thaumcraft:blockMagicalLog:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<TwilightForest:tile.TFLog:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<TwilightForest:tile.TFMagicLog:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<witchery:witchlog:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<harvestthenether:netherLog:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<TaintedMagic:BlockWarpwoodLog>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<harvestcraft:pamCinnamon>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<harvestcraft:pamMaple>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<harvestcraft:pamPaperbark>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<thaumicbases:genLogs>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<thaumicbases:genLogs:1>, false, false, 20, <minecraft:coal:1>);
-//-
-mods.railcraft.BlastFurnace.addRecipe(<miscutils:blockRainforestOakLog>, false, false, 20, <minecraft:coal:1>);
-
-
 
 
 // --- Alloy Smelter Recipes ---
@@ -2869,9 +2815,6 @@ Assembler.addRecipe(<minecraft:trapdoor> * 4, <minecraft:wooden_slab> * 4, <Biom
 // -
 Assembler.addRecipe(<minecraft:trapdoor> * 6, <minecraft:wooden_slab> * 4, <BiomesOPlenty:bamboo> * 4, <liquid:molten.steel> * 16, 600, 4);
 
-
-// --- Piston
-Assembler.addRecipe(<minecraft:piston>, <dreamcraft:tile.PistonBlock>, <dreamcraft:item.PistonPlate>, 100, 30);
 
 // --- Bookshelf
 Assembler.addRecipe(<minecraft:bookshelf>, <minecraft:planks:*> * 6, <minecraft:book> * 3, 300, 16);
@@ -3339,8 +3282,8 @@ furnace.setFuel(<minecraft:wooden_pressure_plate>, 75);
 // --- Nei overriding Stuff ---
 
 
-// --- Compressed Meteoric Steel Plates
-NEI.overrideName(<GalacticraftCore:item.meteoricIronIngot:1>, "Compressed Meteoric Steel Plate");
+// --- Compressed Meteoric Iron Plate
+NEI.overrideName(<GalacticraftCore:item.meteoricIronIngot:1>, "Compressed Meteoric Iron Plate");
 
 // --- Compressed Copper Plate
 NEI.overrideName(<GalacticraftCore:item.basicItem:6>, "Compressed Copper Plate");

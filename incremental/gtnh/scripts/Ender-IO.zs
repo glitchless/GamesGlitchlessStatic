@@ -134,7 +134,7 @@ val Wrench = <ore:craftingToolWrench>;
 val Screwdriver = <ore:craftingToolScrewdriver>;
 val SteelScrew = <ore:screwSteel>;
 val SteelWire = <ore:wireFineSteel>;
-val SiliconPlate = <ore:plateSilicon>;
+val SiliconPlate = <ore:plateSiliconSolarGrade>;
 val LightBulp = <FloodLights:electricIncandescentLightBulb>;
 val IronPlate = <ore:plateIron>;
 val RedAlloyWire = <ore:wireGt01RedAlloy>;
@@ -693,7 +693,7 @@ recipes.addShaped(<EnderIO:blockCrafter>, [
 [Circuit, MCasing, Circuit],
 [SteelCasing, <EnderIO:itemFrankenSkull:1>, SteelCasing]]);
 
-// --- Machine Casing
+// --- Machine Chassis
 recipes.addShaped(MCasing, [
 [SteelCasing, ESteelPlate, SteelCasing],
 [ESteelPlate, Capacitor, ESteelPlate],
@@ -762,12 +762,12 @@ recipes.addShaped(<EnderIO:blockTransceiver>, [
 // --- Item Buffer
 recipes.addShaped(<EnderIO:blockBuffer>, [
 [ESteelPlate, Chest, ESteelPlate],
-[LvConveyor, <ore:frameGtEnderium>, Circuit]]);
+[LvConveyor, <ore:frameGtDarkSteel>, Circuit]]);
 
 // --- Power Buffer
 recipes.addShaped(<EnderIO:blockBuffer:1>, [
 [ESteelPlate, EConduit, ESteelPlate],
-[<gregtech:gt.metaitem.01:32519>, <ore:frameGtEnderium>, Circuit]]);
+[<gregtech:gt.metaitem.01:32519>, <ore:frameGtDarkSteel>, Circuit]]);
 
 // --- Inventory Panel
 recipes.addShaped(<EnderIO:blockInventoryPanel>, [
@@ -1320,7 +1320,7 @@ Assembler.addRecipe(<EnderIO:itemLiquidConduit:6>, <gregtech:gt.blockmachines:52
 Assembler.addRecipe(<EnderIO:itemItemConduit>, <gregtech:gt.blockmachines:5611>, <gregtech:gt.metaitem.01:17378>, <liquid:molten.plastic> * 144, 100, 120);
 
 // --- ME Conduit
-Assembler.addRecipe(<EnderIO:itemMEConduit>, <appliedenergistics2:item.ItemMultiPart:16>, <gregtech:gt.metaitem.01:17020>, <liquid:molten.plastic> * 144, 100, 256);
+Assembler.addRecipe(<EnderIO:itemMEConduit>, <appliedenergistics2:item.ItemMultiPart:16>, <gregtech:gt.metaitem.01:17856>, <liquid:molten.plastic> * 144, 100, 256);
 
 // --- Dense ME Conduit
 Assembler.addRecipe(<EnderIO:itemMEConduit:1>, <EnderIO:itemMEConduit> * 4, <gregtech:gt.metaitem.01:17028>, <liquid:molten.plastic> * 144, 100, 480);
@@ -1360,6 +1360,15 @@ Assembler.addRecipe(<EnderIO:itemSoulVessel>, <EnderIO:blockFusedQuartz> * 3, <g
 
 // --- Dark Clear Glass
 //Assembler.addRecipe(<EnderIO:blockFusedQuartz:5>, <minecraft:dye>, <EnderIO:blockFusedQuartz:1>, 100, 48);
+
+// --- Crafter
+Assembler.addRecipe(<EnderIO:blockCrafter>, [<BuildCraft|Factory:autoWorkbenchBlock>, MCasing, <EnderIO:itemFrankenSkull:1>, Circuit, SteelCasing * 2], null, 200, 64);
+
+// --- Machine Chassis
+Assembler.addRecipe(MCasing, [Capacitor, ESteelPlate * 2, SteelCasing * 2], null, 200, 64);
+
+// --- Reinforced Obsidian
+Assembler.addRecipe(<EnderIO:blockReinforcedObsidian>, [Obsidian, DarkSteelPlate * 2, DarkSteelBars * 2, <gregtech:gt.integrated_circuit:17> * 0], null, 600, 120);
 
 
 
@@ -1412,4 +1421,4 @@ Pulverizer.addRecipe([<EnderIO:itemMaterial:17>, <EnderIO:itemMaterial:17>, <End
 
 
 // --- Untreated Frame (Forestry)
-<EnderIO:blockTravelAnchor>.addTooltip("Cooldown 5 seconds");
+<EnderIO:blockTravelAnchor>.addTooltip("Cooldown 2 seconds");
