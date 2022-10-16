@@ -1,0 +1,22 @@
+{
+  "version": "14.13",
+  "loadlist": [
+    {
+      "name": "GlitchlessGames",
+      "type": "GlitchlessAPI",
+      "root": "https://games.glitchless.ru/api/minecraft/users/profiles/textures/?nickname\u003d"
+    }
+  ],
+  "enableDynamicSkull": true,
+  "enableTransparentSkin": true,
+  "forceIgnoreHttpsCertificate": false,
+  "forceLoadAllTextures": false,
+  "enableCape": true,
+  "threadPoolSize": 3,
+  "retryTime": 1,
+  "cacheExpiry": 30,
+  "forceUpdateSkull": false,
+  "enableLocalProfileCache": false,
+  "enableCacheAutoClean": false,
+  "forceDisableCache": false
+}
