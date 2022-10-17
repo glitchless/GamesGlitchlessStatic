@@ -1,5 +1,4 @@
 {
-    "incremental/gtnh/.DS_Store": "26a0a13229e832bfa0863c7542e91f31",
     "incremental/gtnh/config/AFSU.cfg": "7b2ecaba4b56ac6f6baca7fea1fb5665",
     "incremental/gtnh/config/AWWayofTime.cfg": "cb066377f5c5b113fcebed700b720da1",
     "incremental/gtnh/config/AdvancedSolarPanel.cfg": "1d7503e11c1dd26ed1c321f6116c0494",
@@ -481,7 +480,6 @@
     "incremental/gtnh/libraries/tv/twitch/twitch-platform/5.16/natives.jar": "96e990bdc5568140ee4d40a8d146e3de",
     "incremental/gtnh/libraries/tv/twitch/twitch-platform/5.16/twitch-platform-5.16-natives-osx.jar": "96fdbd651c7f3a58227ca06688e6392b",
     "incremental/gtnh/libraries/tv/twitch/twitch/5.16/twitch-5.16.jar": "a74ff1813e2d8d4872049ca519b56c81",
-    "incremental/gtnh/mods/.DS_Store": "194577a7e20bdcc7afbb718f502c134c",
     "incremental/gtnh/mods/AFSU-1.7.10-1.2.6-GTNH.jar": "ed02cb96d659b0955d67317e380b19e8",
     "incremental/gtnh/mods/AdvancedSolarPanel-1.7.10-3.5.1a.jar": "2e425a214cf9cf96e431f87551de65fb",
     "incremental/gtnh/mods/AngerMod-1.7.10-0.6.3.jar": "b46419e9e999fc36cdc50b6ef20bc9fa",

@@ -2092,5 +2092,9 @@
         "/scripts/Wireless-Redstone.zs": 1,
         "/scripts/Witchery.zs": 1,
         "/scripts/ZZ-Client-Only.zs": 1
+    },
+    "1665985598": {
+        "/.DS_Store": 0,
+        "/mods/.DS_Store": 0
     }
 }
