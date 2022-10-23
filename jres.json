@@ -17,8 +17,8 @@
     "type": "macOS",
     "arch": "x86_64",
     "extension": "zip",
-    "downloadUrl": "https://download.bell-sw.com/java/8u282+8/bellsoft-jre8u282+8-macos-amd64-full.zip",
-    "javaRelativePath": "jre8u282-full/bin/java"
+    "downloadUrl": "https://minecraft.glitchless.ru/jres/bellsoft-jre8u352+8-macos-amd64-full.zip",
+    "javaRelativePath": "jre8u352-full.jre/bin/java"
   },
   {
     "type": "macOS",
