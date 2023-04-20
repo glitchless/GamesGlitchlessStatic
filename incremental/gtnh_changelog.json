@@ -5912,5 +5912,8 @@
         "/scripts/Witchery.zs": 1,
         "/scripts/ZZ-Client-Only.zs": 1,
         "/scripts/runic-tablet.zs": 1
+    },
+    "1681995421": {
+        "/mods/hydroenergy-1.0.19.jar": 0
     }
 }
