@@ -11,6 +11,22 @@ import mods.nei.NEI;
 import mods.gregtech.PrecisionLaser;
 
 
+// --- i18N ---
+val I18N_Build_Craft_0 = "Wood-Covered Kinesis Pipe";
+val I18N_Build_Craft_1 = "Cobblestone-Covered Pipe";
+val I18N_Build_Craft_2 = "Cobblestone-Covered Kinesis Pipe";
+val I18N_Build_Craft_3 = "Stone-Covered Pipe";
+val I18N_Build_Craft_4 = "Stone-Covered Kinesis Pipe";
+val I18N_Build_Craft_5 = "Sandstone-Covered Pipe";
+val I18N_Build_Craft_6 = "Sandstone-Covered Kinesis Pipe";
+val I18N_Build_Craft_7 = "Iron-Covered Pipe";
+val I18N_Build_Craft_8 = "Iron-Covered Kinesis Pipe";
+val I18N_Build_Craft_9 = "Quartz-Covered Pipe";
+val I18N_Build_Craft_10 = "Quartz-Covered Kinesis Pipe";
+val I18N_Build_Craft_11 = "Gold-Covered Kinesis Pipe";
+val I18N_Build_Craft_12 = "Diamond-Covered Kinesis Pipe";
+val I18N_Build_Craft_13 = "Emerald-Covered Kinesis Pipe";
+val I18N_Build_Craft_14 = "Firestone Crystal";
 
 // --- Variables ---
 
@@ -110,309 +126,6 @@ val ClearGlass = <TConstruct:GlassBlock>;
 
 val Wrench = <ore:craftingToolWrench>;
 val Screwdriver = <ore:craftingToolScrewdriver>;
-
-
-// --- Removing Recipes ---
-
-
-// --- Machines ---
-
-
-// --- Mining Well
-recipes.remove(MiningWell);
-
-// --- Quarry
-recipes.remove(<BuildCraft|Builders:machineBlock>);
-
-// --- Pump
-recipes.remove(<BuildCraft|Factory:pumpBlock>);
-
-// --- Laser
-recipes.remove(Laser);
-
-// --- Assembly Table
-recipes.remove(<BuildCraft|Silicon:laserTableBlock>);
-
-// --- Refinery
-recipes.remove(<BuildCraft|Factory:refineryBlock>);
-
-// --- Chute
-recipes.remove(<BuildCraft|Factory:blockHopper>);
-
-// --- Tank
-recipes.remove(BCTank);
-
-// --- Filler
-recipes.remove(Filler);
-
-// --- Builder
-recipes.remove(Builder);
-
-// --- Architect Table
-recipes.remove(ArchitectT);
-
-// --- Electronic Library
-recipes.remove(ElecectronicLib);
-
-// --- Auto Workbench
-recipes.remove(AutoWorkB);
-
-// --- Flood Gate
-recipes.remove(FloodGate);
-
-// --- Zone Planner
-recipes.remove(ZonePlanner);
-
-// --- Requester
-recipes.remove(Requester);
-
-// --- Filtered Buffer
-recipes.remove(FilterBuffer);
-
-// --- Docking Station
-recipes.remove(DockingStation);
-
-// --- Integration Table
-recipes.remove(<BuildCraft|Silicon:laserTableBlock:2>);
-
-// --- Charging Table
-recipes.remove(<BuildCraft|Silicon:laserTableBlock:3>);
-
-// --- Programming Table
-recipes.remove(<BuildCraft|Silicon:laserTableBlock:4>);
-
-// --- Stamping Table
-recipes.remove(<BuildCraft|Silicon:laserTableBlock:5>);
-
-// --- Recipes Packager
-recipes.remove(<BuildCraft|Silicon:packagerBlock>);
-
-
-// --- Engines ---
-
-
-// --- Redstone Engine
-recipes.remove(<BuildCraft|Core:engineBlock>);
-
-// --- Stirling Engine
-recipes.remove(<BuildCraft|Core:engineBlock:1>);
-
-// --- Combustion Engine
-recipes.remove(<BuildCraft|Core:engineBlock:2>);
-
-
-// --- Gears ---
-
-
-// --- Diamond Gear
-recipes.remove(DiamondGear);
-
-// --- Gold Gear
-recipes.remove(GoldGear);
-
-// --- Iron Gear
-recipes.remove(IronGear);
-
-// --- Stone Gear
-recipes.remove(StoneGear);
-
-// --- Wooden Gear
-recipes.remove(WoodGear);
-
-// --- Fluid Clay pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidsclay>);
-
-// --- Power Adapter
-recipes.remove(<BuildCraft|Transport:pipePowerAdapter>);
-
-
-
-// --- Pipes ---
-
-
-
-// --- Wooden Transport Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemswood:*>);
-
-// --- Wooden Fluid Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidswood:*>);
-
-// --- Wooden Kinesis Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepowerwood:*>);
-
-// --- Cobblestone Transport Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemscobblestone:*>);
-
-// --- Cobblestone Fluid Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidscobblestone:*>);
-
-// --- Cobblestone Kinesis Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepowercobblestone:*>);
-
-// --- Stone Transport Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsstone:*>);
-
-// --- Stone Fluid Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidsstone:*>);
-
-// --- Stone Kinesis Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepowerstone:*>);
-
-// --- Sandstone Transport Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemssandstone:*>);
-
-// --- Sandstone Fluid Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidssandstone:*>);
-
-// --- Sandstone Kinesis Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepowersandstone:*>);
-
-// --- Iron Transport Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsiron:*>);
-
-// --- Iron Fluid Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidsiron:*>);
-
-// --- Iron Kinesis Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepoweriron:*>);
-
-// --- Quartz Transport Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsquartz:*>);
-
-// --- Quartz Fluid Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidsquartz:*>);
-
-// --- Quartz Kinesis Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepowerquartz:*>);
-
-// --- Golden Transport Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsgold:*>);
-
-// --- Golden Fluid Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidsgold:*>);
-
-// --- Golden Kinesis Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepowergold:*>);
-
-// --- Lapis Transport Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemslapis:*>);
-
-// --- Obsidian Transport Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsobsidian:*>);
-
-// --- Diamond Transport Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsdiamond:*>);
-
-// --- Diamond Kinesis Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepowerdiamond:*>);
-
-// --- Dimond Fluid Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidsdiamond:*>);
-
-// --- Emerald Transport Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsemerald:*>);
-
-// --- Emerald Fluid Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidsemerald:*>);
-
-// --- Emerald Kinesis Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepoweremerald:*>);
-
-// --- Daizuli Transport Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsdaizuli:*>);
-
-// --- Emzuli Transport Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsemzuli:*>);
-
-// --- Stripes Transport Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:*>);
-
-// --- Void Transport Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsvoid:*>);
-
-// --- Void Fluid Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidsvoid:*>);
-
-// --- Clay Transport Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsclay:*>);
-
-// --- Cobblestone Structure Pipe
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipestructurecobblestone:*>);
-
-// --- Robot
-recipes.remove(Robot);
-
-// --- Gates
-recipes.remove(Gate);
-
-// --- Construction Mark
-recipes.remove(<BuildCraft|Builders:constructionMarkerBlock>);
-
-// --- Template
-recipes.remove(<BuildCraft|Builders:templateItem>);
-
-// --- Blueprint
-recipes.remove(<BuildCraft|Builders:blueprintItem>);
-
-// --- Redstone Board
-recipes.remove(<BuildCraft|Robotics:redstone_board>);
-
-
-
-
-// --- Items ---
-
-
-
-// --- Land Mark
-recipes.remove(LandMark);
-
-// --- Path Mark
-recipes.remove(PathMark);
-
-// --- Wrench
-recipes.remove(<BuildCraft|Core:wrenchItem>);
-
-// --- Redstone Crystal
-recipes.remove(RSCrystal);
-
-// --- Pipe Sealant
-recipes.remove(Sealant);
-
-// --- Pipe Plug
-recipes.remove(PipePlug);
-
-// --- Gate Copier
-recipes.remove(GateCopier);
-
-// --- Map Location
-recipes.remove(<BuildCraft|Core:mapLocation>);
-
-// --- Propolis Pipes
-recipes.remove(<BuildCraft|Compat:item.buildcraftPipe.pipeitemspropolis>);
-
-
-
-
-// --- Assembly Table Recipes ---
-
-
-// --- Redstone Crystal
-mods.buildcraft.AssemblyTable.removeRecipe(<BuildCraft|Silicon:redstoneCrystal>);
-
-// --- Chipsets
-mods.buildcraft.AssemblyTable.removeRecipe(<BuildCraft|Silicon:redstoneChipset:*>);
-
-// --- Genetic Processor
-mods.buildcraft.AssemblyTable.removeRecipe(<gendustry:GeneticsProcessor>);
-
-// --- Inviromental Processor
-mods.buildcraft.AssemblyTable.removeRecipe(<gendustry:EnvProcessor>);
-
-
-
-
-
 
 // --- Adding Recipes ---
 
@@ -720,46 +433,46 @@ PrecisionLaser.addRecipe(<BuildCraft|Silicon:redstoneCrystal>, <gregtech:gt.meta
 
 
 // --- Wood-Covered Kinesis Pipe
-NEI.overrideName(PipeWoodKinesis, "Wood-Covered Kinesis Pipe");
+NEI.overrideName(PipeWoodKinesis, I18N_Build_Craft_0);
 
 // --- Cobblestone-Covered Pipe
-NEI.overrideName(PipeCobble, "Cobblestone-Covered Pipe");
+NEI.overrideName(PipeCobble, I18N_Build_Craft_1);
 
 // --- Cobblestone-Covered Kinesis Pipe
-NEI.overrideName(PipeCobbleKinesis, "Cobblestone-Covered Kinesis Pipe");
+NEI.overrideName(PipeCobbleKinesis, I18N_Build_Craft_2);
 
 // --- Stone-Covered Pipe
-NEI.overrideName(PipeStone, "Stone-Covered Pipe");
+NEI.overrideName(PipeStone, I18N_Build_Craft_3);
 
 // --- Stone-Covered Kinesis Pipe
-NEI.overrideName(PipeStoneKinesis, "Stone-Covered Kinesis Pipe");
+NEI.overrideName(PipeStoneKinesis, I18N_Build_Craft_4);
 
 // --- Sandstone-Covered Pipe
-NEI.overrideName(PipeSandstone, "Sandstone-Covered Pipe");
+NEI.overrideName(PipeSandstone, I18N_Build_Craft_5);
 
 // --- Sandstone-Covered Kinesis Pipe
-NEI.overrideName(PipeSandstoneKinesis, "Sandstone-Covered Kinesis Pipe");
+NEI.overrideName(PipeSandstoneKinesis, I18N_Build_Craft_6);
 
 // --- Iron-Covered Pipe
-NEI.overrideName(PipeIron, "Iron-Covered Pipe");
+NEI.overrideName(PipeIron, I18N_Build_Craft_7);
 
 // --- Iron-Covered Kinesis Pipe
-NEI.overrideName(PipeIronKinesis, "Iron-Covered Kinesis Pipe");
+NEI.overrideName(PipeIronKinesis, I18N_Build_Craft_8);
 
 // --- Quartz-Covered Pipe
-NEI.overrideName(PipeQuartz, "Quartz-Covered Pipe");
+NEI.overrideName(PipeQuartz, I18N_Build_Craft_9);
 
 // --- Quartz-Covered Kinesis Pipe
-NEI.overrideName(PipeQuartzKinesis, "Quartz-Covered Kinesis Pipe");
+NEI.overrideName(PipeQuartzKinesis, I18N_Build_Craft_10);
 
 // --- Gold-Covered Kinesis Pipe
-NEI.overrideName(PipeGoldKinesis, "Gold-Covered Kinesis Pipe");
+NEI.overrideName(PipeGoldKinesis, I18N_Build_Craft_11);
 
 // --- Diamond-Covered Kinesis Pipe
-NEI.overrideName(PipeDiamondKinesis, "Diamond-Covered Kinesis Pipe");
+NEI.overrideName(PipeDiamondKinesis, I18N_Build_Craft_12);
 
 // --- Emerald-Covered Kinesis Pipe
-NEI.overrideName(PipeEmeraldKinesis, "Emerald-Covered Kinesis Pipe");
+NEI.overrideName(PipeEmeraldKinesis, I18N_Build_Craft_13);
 
 // --- Redstone Crystal
-NEI.overrideName(<BuildCraft|Silicon:redstoneCrystal>, "Firestone Crystal");
+NEI.overrideName(<BuildCraft|Silicon:redstoneCrystal>, I18N_Build_Craft_14);

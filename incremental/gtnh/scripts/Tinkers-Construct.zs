@@ -10,6 +10,10 @@ import mods.gregtech.Extruder;
 import mods.nei.NEI;
 
 
+// --- I18N ---
+val _I18N_Lang = "en_US";
+val I18N_Tinkers_Construct_0 = "Can be placed on a empty IC2 Crop.";
+
 // --- Variables ---
 
 var IronOreberry = <TConstruct:oreBerries:0>;
@@ -79,12 +83,12 @@ val Paintbrush = <ExtraUtilities:paintbrush>;
 
 
 // --- Tooltips ---
-IronOreberry.addTooltip("Can be placed on a empty IC2 Crop.");
-TinOreberry.addTooltip("Can be placed on a empty IC2 Crop.");
-CopperOreberry.addTooltip("Can be placed on a empty IC2 Crop.");
-GoldOreberry.addTooltip("Can be placed on a empty IC2 Crop.");
-AluminiumOreberry.addTooltip("Can be placed on a empty IC2 Crop.");
-EssenceOreberry.addTooltip("Can be placed on a empty IC2 Crop.");
+IronOreberry.addTooltip(I18N_Tinkers_Construct_0);
+TinOreberry.addTooltip(I18N_Tinkers_Construct_0);
+CopperOreberry.addTooltip(I18N_Tinkers_Construct_0);
+GoldOreberry.addTooltip(I18N_Tinkers_Construct_0);
+AluminiumOreberry.addTooltip(I18N_Tinkers_Construct_0);
+EssenceOreberry.addTooltip(I18N_Tinkers_Construct_0);
 
 // --- Blocks ---
 
@@ -485,6 +489,8 @@ recipes.remove(<TConstruct:SearedBlockNether:2>);
 
 // --- Casting Channel
 recipes.remove(<TConstruct:CastingChannel>);
+// -
+recipes.remove(<TConstruct:CastingChannel:1>);
 
 // --- Casting Faucet
 recipes.remove(<TConstruct:SearedBlock:1>);
@@ -1539,11 +1545,16 @@ recipes.addShaped(<TConstruct:CastingChannel>, [
 [<TConstruct:materials:2>, null, <TConstruct:materials:2>],
 [<TConstruct:materials:2>, null, <TConstruct:materials:2>],
 [<TConstruct:materials:2>, <TConstruct:materials:2>, <TConstruct:materials:2>]]);
+// -
+recipes.addShaped(<TConstruct:CastingChannel:1>, [
+[<TConstruct:materials:37>, null, <TConstruct:materials:37>],
+[<TConstruct:materials:37>, null, <TConstruct:materials:37>],
+[<TConstruct:materials:37>, <TConstruct:materials:37>, <TConstruct:materials:37>]]);
 
 // --- Casting Faucet
 recipes.addShaped(<TConstruct:SearedBlock:1> * 2, [[<ore:craftingToolSaw>, <TConstruct:CastingChannel>]]);
 // -
-recipes.addShaped(<TConstruct:SearedBlockNether:1> * 2, [[<TConstruct:CastingChannel>, <ore:craftingToolSaw>]]);
+recipes.addShaped(<TConstruct:SearedBlockNether:1> * 2, [[<ore:craftingToolSaw>, <TConstruct:CastingChannel:1>]]);
 // -
 recipes.addShaped(<TConstruct:SearedBlock:1>, [
 [null, null, null],

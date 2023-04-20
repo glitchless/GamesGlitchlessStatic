@@ -6,9 +6,6 @@
 
 
 import mods.gregtech.Assembler;
-import mods.nei.NEI;
-
-
 
 
 // --- Remove Recipes --- 
@@ -94,7 +91,7 @@ recipes.addShaped(<AdvancedSolarPanel:asp_crafting_items:5> * 4, [
 // --- Quantum Core
 recipes.addShaped(<AdvancedSolarPanel:asp_crafting_items:13>, [
 [<AdvancedSolarPanel:asp_crafting_items:4>, <ore:plateNetherStar>, <AdvancedSolarPanel:asp_crafting_items:4>],
-[<ore:plateNetherStar>, <dreamcraft:item.NanoCircuit>, <ore:plateNetherStar>],
+[<ore:plateNetherStar>, <ore:circuitOptical>, <ore:plateNetherStar>],
 [<AdvancedSolarPanel:asp_crafting_items:4>, <ore:plateNetherStar>, <AdvancedSolarPanel:asp_crafting_items:4>]]);
 
 // --- Advanced Solar Panel
@@ -136,13 +133,3 @@ Assembler.addRecipe(<AdvancedSolarPanel:asp_crafting_items:1>, <gregtech:gt.meta
 
 // --- Enriched Sunnarium Alloy
 Assembler.addRecipe(<AdvancedSolarPanel:asp_crafting_items:4>, <AdvancedSolarPanel:asp_crafting_items:1>, <AdvancedSolarPanel:asp_crafting_items:3> * 8,  1600, 122880);
-
-
-
-
-
-// --- Nei override Names
-
-
-// --- Irradiant Reinforced Iridium Plate
-NEI.overrideName(<AdvancedSolarPanel:asp_crafting_items:8>, "Irradiant Reinforced Iridium Plate");

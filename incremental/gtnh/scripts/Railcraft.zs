@@ -19,6 +19,11 @@ import mods.ic2.SemiFluidGenerator;
 import mods.gregtech.Wiremill;
 
 
+// --- I18N ---
+val _I18N_Lang = "en_US";
+val I18N_Railcraft_0 = "Lapatron Loader Upgrade";
+val I18N_Railcraft_1 = "Lead Plate";
+
 // --- Variables ---
 
 
@@ -592,6 +597,9 @@ recipes.remove(<Railcraft:machine.gamma:10>);
 
 // --- Redstone Flux Unloader
 recipes.remove(<Railcraft:machine.gamma:11>);
+
+// --- Blood Stained Block
+recipes.remove(<Railcraft:brick.bloodstained:2>);
 
 
 
@@ -1710,10 +1718,10 @@ mods.forestry.ThermionicFabricator.addCast(<liquid:glass> * 2000, [
 
 
 // --- Lapatron Loader Upgrade
-<Railcraft:upgrade.lapotron>.displayName = "Lapatron Loader Upgrade";
+<Railcraft:upgrade.lapotron>.displayName = I18N_Railcraft_0;
 
 // --- Lead Plate
-<Railcraft:part.plate:4>.displayName = "Lead Plate";
+<Railcraft:part.plate:4>.displayName = I18N_Railcraft_1;
 
 
 

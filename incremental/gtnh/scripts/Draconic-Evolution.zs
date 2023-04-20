@@ -30,227 +30,13 @@ val sgCoreCrystal = <SGCraft:sgCoreCrystal>;
 val sgLargeCapacitor = <SGCraft:ic2Capacitor>;
 
 
-
-
-
 // --- Remove Recipes ---
-
-
-
-// --- Draconic Core
-recipes.remove(DraconicCore);
-
-// --- Wyvern Core
-recipes.remove(WyvernCore);
-
-// --- Wyvern Energy Core
-recipes.remove(WyvernECore);
-
-// --- Wyvern Flux Capacitor
-recipes.remove(WyvernFluxCapicator);
-
-// --- Sword of the Wyvern
-recipes.remove(<DraconicEvolution:wyvernSword>);
-
-// --- Pickaxe of the Wyvern
-recipes.remove(<DraconicEvolution:wyvernPickaxe>);
-
-// --- Shovel of the Wyvern
-recipes.remove(<DraconicEvolution:wyvernShovel>);
-
-// --- Bow of the Wyvern
-recipes.remove(<DraconicEvolution:wyvernBow>);
-
-// --- Wyvern Helm
-recipes.remove(<DraconicEvolution:wyvernHelm>);
-
-// --- Wyvern Chestplate
-recipes.remove(<DraconicEvolution:wyvernChest>);
-
-// --- Wyvern Leggings
-recipes.remove(<DraconicEvolution:wyvernLeggs>);
-
-// --- Wyvern Boots
-recipes.remove(<DraconicEvolution:wyvernBoots>);
-
-// --- Awakened Core
-recipes.remove(AwakenedCore);
-
-// --- Draconic Energy Core
-recipes.remove(DraconicECore);
-
-// --- Draconic Flux Capacitor
-recipes.remove(DraconicFluxCapacitor);
-
-// --- Draconic Sword
-recipes.remove(<DraconicEvolution:draconicSword>);
-
-// --- Draconic Pickaxe
-recipes.remove(<DraconicEvolution:draconicPickaxe>);
-
-// --- Draconic Shovel
-recipes.remove(<DraconicEvolution:draconicShovel>);
-
-// --- Draconic Bow
-recipes.remove(<DraconicEvolution:draconicBow>);
-
-// --- Draconic Helm
-recipes.remove(<DraconicEvolution:draconicHelm>);
-
-// --- Draconic Chestplate
-recipes.remove(<DraconicEvolution:draconicChest>);
-
-// --- Draconic Leggings
-recipes.remove(<DraconicEvolution:draconicLeggs>);
-
-// --- Draconic Boots
-recipes.remove(<DraconicEvolution:draconicBoots>);
-
-// --- Draconic Axe
-recipes.remove(<DraconicEvolution:draconicAxe>);
-
-// --- Draconic Hoe
-recipes.remove(<DraconicEvolution:draconicHoe>);
-
-// --- Draconic Stuff of Power
-recipes.remove(<DraconicEvolution:draconicDistructionStaff>);
-
-// --- Chaotic Core
-recipes.remove(ChaoticCore);
-
-// --- Charm of Disloctotion
-recipes.remove(DCham);
-
-// --- Enhanced Charm of Disloctotion
-recipes.remove(<DraconicEvolution:teleporterMKII>);
-
-// --- Energy Infuser
-recipes.remove(<DraconicEvolution:energyInfuser>);
-
-// --- Particel Generator
-recipes.remove(<DraconicEvolution:particleGenerator>);
-
-// --- Draconic Infused Obsidian
-recipes.remove(<DraconicEvolution:infusedObsidian>);
-
-// --- Draconic Evolution Tablet
-recipes.remove(<DraconicEvolution:infoTablet>);
-
-// --- Item Dislocator
-recipes.remove(<DraconicEvolution:magnet>);
-
-// --- Advanced Item Dislocator
-recipes.remove(<DraconicEvolution:magnet:1>);
-
-// --- Reactor Stabilizer Inner Rotor
-recipes.remove(IRotor);
-
-// --- Reactor Stabilizer Outer Rotor
-recipes.remove(ORotor);
-
-// --- Reactor Stabilizer Rotor Assembly
-recipes.remove(<DraconicEvolution:reactorCraftingPart:3>);
-
-// --- Reactor Stabilizer Focus Ring
-recipes.remove(<DraconicEvolution:reactorCraftingPart:4>);
-
-// --- Reactor Stabilizer Frame
-recipes.remove(<DraconicEvolution:reactorCraftingPart>);
-
-// --- Reactor Stabilizer
-recipes.remove(<DraconicEvolution:reactorStabilizer>);
-
-// --- Draconic Reactor Core
-recipes.remove(<DraconicEvolution:reactorCore>);
-
-// --- Resurrection Stone
-recipes.remove(<DraconicEvolution:draconium:1>);
-
-// --- Draconic Chest
-recipes.remove(<DraconicEvolution:draconiumChest>);
-
-// --- Dislocator Pedestal
-recipes.remove(<DraconicEvolution:teleporterStand>);
-
-// --- Dislocator Receptacle
-recipes.remove(<DraconicEvolution:dislocatorReceptacle>);
-
-// --- Safty Match
-recipes.remove(<DraconicEvolution:safetyMatch:*>);
-
-// --- Safty Match Box
-recipes.remove(<DraconicEvolution:safetyMatch>);
-
-// --- Distortion Flame
-recipes.remove(<DraconicEvolution:xRayBlock>);
-
-// --- Energy Core
-recipes.remove(<DraconicEvolution:energyStorageCore>);
-
-// --- Energy Pylon
-recipes.remove(<DraconicEvolution:energyPylon>);
-
-// --- Energy Relay
-recipes.remove(<DraconicEvolution:energyCrystal>);
-
-// --- Wireless Energy Tranceiver
-recipes.remove(<DraconicEvolution:energyCrystal:4>);
-
-// --- Advanced Energy Relay
-recipes.remove(<DraconicEvolution:energyCrystal:1>);
-
-// --- Advanced Wireless Energy Tranceiver
-recipes.remove(<DraconicEvolution:energyCrystal:5>);
-
-// --- Crystal Binder
-recipes.remove(<DraconicEvolution:wrench>);
-
-// --- Ender Arrow
-recipes.remove(<DraconicEvolution:enderArrow>);
-
-// --- Generator
-recipes.remove(<DraconicEvolution:generator:3>);
-
-// --- Player Detector
-recipes.remove(<DraconicEvolution:playerDetector>);
-
-// --- Advanced Player Detector
-recipes.remove(<DraconicEvolution:playerDetectorAdvanced>);
-
-// --- Rain Sensor
-recipes.remove(<DraconicEvolution:rainSensor>);
-
-// --- Weather Control
-recipes.remove(<DraconicEvolution:weatherController>);
-
-// --- Sun Dial
-recipes.remove(<DraconicEvolution:sunDial>);
-
-// --- Mob Grinder
-recipes.remove(<DraconicEvolution:grinder:3>);
-
-// --- Fluid Gate
-recipes.remove(<DraconicEvolution:flowGate:6>);
-
-// --- Flux Gate
-recipes.remove(<DraconicEvolution:flowGate>);
-
-// --- Reactor Energy Injector
-recipes.remove(<DraconicEvolution:reactorEnergyInjector>);
-
-// --- Upgrade Modifier
-recipes.remove(<DraconicEvolution:upgradeModifier>);
-
-
-
 
 
 // --- Add Recipes ---
 
 
-
-
-// --- Charm of Disloctotion
+// --- Charm of Dislocation
 mods.avaritia.ExtremeCrafting.addShaped(DCham, [
 [null, null, null, null, <ore:plateDenseDraconium>, null, null, null, null],
 [null, null, null, <ore:plateDenseNaquadahAlloy>, <ore:plateDenseNaquadahAlloy>, <ore:plateDenseNaquadahAlloy>, null, null, null],
@@ -262,14 +48,14 @@ mods.avaritia.ExtremeCrafting.addShaped(DCham, [
 [null, <ore:plateDenseDraconium>, <ore:plateDenseDraconium>, <ore:plateDenseNaquadahAlloy>, <ore:plateDenseNaquadahAlloy>, <ore:plateDenseNaquadahAlloy>, <ore:plateDenseDraconium>, <ore:plateDenseDraconium>, null],
 [<ore:plateDenseDraconium>, null, null, null, null, null, null, null, <ore:plateDenseDraconium>]]);
 
-// --- Enhanced Charm of Disloctotion
+// --- Enhanced Charm of Dislocation
 mods.avaritia.ExtremeCrafting.addShaped(<DraconicEvolution:teleporterMKII>, [
 [null, null, null, <ore:plateDenseDraconium>, <ore:plateDenseDraconium>, <ore:plateDenseDraconium>, null, null, null],
 [null, <ore:plateDenseDraconium>, <ore:plateDenseDraconium>, <ore:plateDenseDraconiumAwakened>, <TGregworks:tGregToolPartLargePlate:1669>.withTag({material: "Infinity"}), <ore:plateDenseDraconiumAwakened>, <ore:plateDenseDraconium>, <ore:plateDenseDraconium>, null],
 [null, <ore:plateDenseDraconium>, <gregtech:gt.metaitem.01:32677>, <gregtech:gt.metaitem.01:32687>, <ore:blockAmericium>, <gregtech:gt.metaitem.01:32687>, <gregtech:gt.metaitem.01:32677>, <ore:plateDenseDraconium>, null],
-[<ore:plateDenseDraconium>, <DraconicEvolution:teleporterMKI>, <gregtech:gt.metaitem.01:32697>, <ore:plateDenseDraconium>, <DraconicEvolution:chaoticCore>, <ore:plateDenseDraconium>, <gregtech:gt.metaitem.01:32697>, <DraconicEvolution:teleporterMKI>, <ore:plateDenseDraconium>],
-[<ore:plateDenseDraconium>, <TGregworks:tGregToolPartLargePlate:1669>.withTag({material: "Infinity"}), <ore:plateDenseDraconium>, <DraconicEvolution:chaoticCore>, <DraconicEvolution:teleporterMKI>, <DraconicEvolution:chaoticCore>, <ore:plateDenseDraconium>, <TGregworks:tGregToolPartLargePlate:1669>.withTag({material: "Infinity"}), <ore:plateDenseDraconium>],
-[<ore:plateDenseDraconium>, <ore:plateDenseDraconiumAwakened>, <ore:plateDenseDraconium>, <ore:plateDenseDraconium>, <DraconicEvolution:chaoticCore>, <ore:plateDenseDraconium>, <ore:plateDenseDraconium>, <ore:plateDenseDraconiumAwakened>, <ore:plateDenseDraconium>],
+[<ore:plateDenseDraconium>, <DraconicEvolution:teleporterMKI>, <gregtech:gt.metaitem.01:32697>, <ore:plateDenseDraconium>, <DraconicEvolution:awakenedCore>, <ore:plateDenseDraconium>, <gregtech:gt.metaitem.01:32697>, <DraconicEvolution:teleporterMKI>, <ore:plateDenseDraconium>],
+[<ore:plateDenseDraconium>, <TGregworks:tGregToolPartLargePlate:1669>.withTag({material: "Infinity"}), <ore:plateDenseDraconium>, <DraconicEvolution:awakenedCore>, <DraconicEvolution:teleporterMKI>, <DraconicEvolution:awakenedCore>, <ore:plateDenseDraconium>, <TGregworks:tGregToolPartLargePlate:1669>.withTag({material: "Infinity"}), <ore:plateDenseDraconium>],
+[<ore:plateDenseDraconium>, <ore:plateDenseDraconiumAwakened>, <ore:plateDenseDraconium>, <ore:plateDenseDraconium>, <DraconicEvolution:awakenedCore>, <ore:plateDenseDraconium>, <ore:plateDenseDraconium>, <ore:plateDenseDraconiumAwakened>, <ore:plateDenseDraconium>],
 [null, <ore:plateDenseDraconium>, <DraconicEvolution:teleporterMKI>, <gregtech:gt.metaitem.01:32687>, <ore:blockAmericium>, <gregtech:gt.metaitem.01:32687>, <DraconicEvolution:teleporterMKI>, <ore:plateDenseDraconium>, null],
 [null, <ore:plateDenseDraconium>, <ore:plateDenseDraconium>, <ore:plateDenseDraconiumAwakened>, <TGregworks:tGregToolPartLargePlate:1669>.withTag({material: "Infinity"}), <ore:plateDenseDraconiumAwakened>, <ore:plateDenseDraconium>, <ore:plateDenseDraconium>, null],
 [null, null, null, <ore:plateDenseDraconium>, <ore:plateDenseDraconium>, <ore:plateDenseDraconium>, null, null, null]]);
@@ -570,10 +356,10 @@ mods.avaritia.ExtremeCrafting.addShaped(<DraconicEvolution:draconicHoe>, [
 [null, null, <ore:ingotDraconium>, null, null, null, null, null, null],
 [null, <ore:ingotDraconium>, null, null, null, null, null, null, null]]);
 
-// --- Draconic Stuff of Power
+// --- Draconic Staff of Power
 mods.avaritia.ExtremeCrafting.addShaped(<DraconicEvolution:draconicDistructionStaff>, [
 [null, null, null, <ore:plateDraconiumAwakened>, DraconicECore, <ore:plateDraconiumAwakened>, null, null, null],
-[null, <ore:plateDraconiumAwakened>, <ore:plateDraconiumAwakened>, ChaoticCore, <DraconicEvolution:draconicShovel>, ChaoticCore, <ore:plateDraconiumAwakened>, <ore:plateDraconiumAwakened>, null],
+[null, <ore:plateDraconiumAwakened>, <ore:plateDraconiumAwakened>, <DraconicEvolution:awakenedCore>, <DraconicEvolution:draconicShovel>, <DraconicEvolution:awakenedCore>, <ore:plateDraconiumAwakened>, <ore:plateDraconiumAwakened>, null],
 [<ore:plateDraconiumAwakened>, null, null, <DraconicEvolution:draconicPickaxe>, <ore:ingotDraconiumAwakened>, <DraconicEvolution:draconicSword>, null, null, <ore:plateDraconiumAwakened>],
 [null, null, null, null, <ore:ingotDraconiumAwakened>, null, null, null, null],
 [null, null, null, null, <ore:ingotDraconiumAwakened>, null, null, null, null],
