@@ -5915,5 +5915,11 @@
     },
     "1681995421": {
         "/mods/hydroenergy-1.0.19.jar": 0
+    },
+    "1682071253": {
+        "/mods/1.7.10/CodeChickenLib-1.1.6.jar": 1,
+        "/mods/1.7.10/MrTJPCore-1.7.10-1.1.4.jar": 1,
+        "/mods/MrTJPCore-1.7.10-1.1.4.jar": 0,
+        "/mods/notenoughIDs-1.7.10-1.4.6.jar": 0
     }
 }
