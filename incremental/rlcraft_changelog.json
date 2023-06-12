@@ -4949,5 +4949,8 @@
         "/versions/1.12.2-forge-14.23.5.2860/natives/openal.dylib": 1,
         "/versions/1.12.2/1.12.2.jar": 1,
         "/versions/1.12.2/1.12.2.json": 1
+    },
+    "1686579105": {
+        "/mods/OptiFine_1.12.2_HD_U_G5.jar": 1,
     }
 }
