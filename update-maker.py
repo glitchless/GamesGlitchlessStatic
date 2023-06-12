@@ -142,7 +142,7 @@ def main():
         run_with_arguments()
         return
 
-    packs = ['gtnh', 'vanilla', 'asworkaround']
+    packs = ['gtnh', 'vanilla', 'asworkaround', 'rlcraft']
     for name in packs:
         make_changelog('incremental/' + name,
                        'incremental/indexes/' + name + '.json',
