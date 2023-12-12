@@ -3,15 +3,15 @@
     "type": "Linux",
     "arch": "x86_64",
     "extension": "tar.gz",
-    "downloadUrl": "https://download.bell-sw.com/java/8u282+8/bellsoft-jre8u282+8-linux-amd64-full.tar.gz",
-    "javaRelativePath": "jre8u282-full/bin/java"
+    "downloadUrl": "https://minecraft.glitchless.ru/jres/bellsoft-jre8u392+9-linux-amd64-full.tar.gz",
+    "javaRelativePath": "jre8u392-full/bin/java"
   },
   {
     "type": "Windows",
     "arch": "x86_64",
     "extension": "zip",
-    "downloadUrl": "https://download.bell-sw.com/java/8u282+8/bellsoft-jre8u282+8-windows-amd64-full.zip",
-    "javaRelativePath": "jre8u282-full/bin/java.exe"
+    "downloadUrl": "https://minecraft.glitchless.ru/jres/bellsoft-jre8u392+9-windows-amd64-full.zip",
+    "javaRelativePath": "jre8u392-full/bin/java.exe"
   },
   {
     "type": "macOS",
