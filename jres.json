@@ -17,14 +17,14 @@
     "type": "macOS",
     "arch": "x86_64",
     "extension": "zip",
-    "downloadUrl": "https://minecraft.glitchless.ru/jres/bellsoft-jre8u352+8-macos-amd64-full.zip",
-    "javaRelativePath": "jre8u352-full.jre/bin/java"
+    "downloadUrl": "https://minecraft.glitchless.ru/jres/bellsoft-jre8u392+9-macos-amd64-full.zip",
+    "javaRelativePath": "jre8u392-full.jre/bin/java"
   },
   {
     "type": "macOS",
     "arch": "arm",
     "extension": "zip",
-    "downloadUrl": "https://minecraft.glitchless.ru/jres/bellsoft-jre8u345+1-macos-aarch64-full.zip",
-    "javaRelativePath": "jre8u345-full.jre/bin/java"
+    "downloadUrl": "https://minecraft.glitchless.ru/jresbellsoft-jre8u392+9-macos-aarch64-full.zip",
+    "javaRelativePath": "jre8u392-full.jre/bin/java"
   }
 ]
