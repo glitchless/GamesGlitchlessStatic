@@ -24,7 +24,7 @@
     "type": "macOS",
     "arch": "arm",
     "extension": "zip",
-    "downloadUrl": "https://minecraft.glitchless.ru/jresbellsoft-jre8u392+9-macos-aarch64-full.zip",
+    "downloadUrl": "https://minecraft.glitchless.ru/jres/bellsoft-jre8u392+9-macos-aarch64-full.zip",
     "javaRelativePath": "jre8u392-full.jre/bin/java"
   }
 ]
