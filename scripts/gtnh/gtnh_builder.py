@@ -32,7 +32,7 @@ def append_resources():
 
 def remove_unsupported():
     os.remove(unzipped_modpack_folder + "mods/fastcraft-1.25.jar")
-    os.remove(unzipped_modpack_folder + "mods/hydroenergy-1.1.1.jar")
+    # os.remove(unzipped_modpack_folder + "mods/hydroenergy-1.1.1.jar")
 
 
 def main():
