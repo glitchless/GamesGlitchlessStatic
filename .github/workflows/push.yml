@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  buildx:
+  patch:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout current repo
@@ -23,10 +23,11 @@ jobs:
       - name: Install deps
         run: pip install -r requirements.txt
       - name: Apply GTNH patch
-        run: cd scripts/gtnh/ |
-          python3 gtnh_builder.py |
-          cd $GITHUB_WORKSPACE |
-          rm -rf gh_static/incremental/gtnh/ |
+        run: |
+          cd scripts/gtnh/
+          python3 gtnh_builder.py
+          cd $GITHUB_WORKSPACE
+          rm -rf gh_static/incremental/gtnh/
           mv scripts/gtnh/out/gtnh gh_static/incremental/gtnh
       - name: Generate changelog
         run: cp scripts/update_maker.py gh_static/ && cd gh_static/ && python3 update_maker.py && rm update_maker.py
