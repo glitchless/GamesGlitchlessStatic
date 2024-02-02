@@ -30,7 +30,12 @@ jobs:
           rm -rf gh_static/incremental/gtnh/
           mv scripts/gtnh/out/gtnh gh_static/incremental/gtnh
       - name: Generate changelog
-        run: cp scripts/update_maker.py gh_static/ && cd gh_static/ && python3 update_maker.py && rm update_maker.py
+        run: |
+          cd $GITHUB_WORKSPACE
+          cp scripts/update-maker.py gh_static/ 
+          cd gh_static/
+          python3 update_maker.py 
+          rm update_maker.py
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
