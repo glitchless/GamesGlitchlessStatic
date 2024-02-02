@@ -30,9 +30,15 @@ def append_resources():
     distutils.dir_util.copy_tree(resources_folder, unzipped_modpack_folder)
 
 
+def remove_unsupported():
+    os.remove(unzipped_modpack_folder + "mods/fastcraft-1.25.jar")
+    os.remove(unzipped_modpack_folder + "mods/hydroenergy-1.1.1.jar")
+
+
 def main():
     prepare_gtnh()
     append_resources()
+    remove_unsupported()
 
 
 if __name__ == '__main__':
