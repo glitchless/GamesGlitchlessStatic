@@ -2,16 +2,12 @@ import distutils.dir_util
 import zipfile
 import urllib.request
 import os
-import wget
 import shutil
 
-client_download_url = "https://downloads.gtnewhorizons.com/ClientPacks/GT_New_Horizons_2.5.1_Client_Java_8.zip"
+# https://downloads.gtnewhorizons.com/ClientPacks/GT_New_Horizons_2.5.1_Client_Java_8.zip
+client_download_url = "https://transfer.sh/nNDgzlNrdK/GT_New_Horizons_2.5.1_Client_Java_8.zip"
 unzipped_modpack_folder = "out/gtnh/"
 resources_folder = "resources/"
-
-
-def gtnh_download_bar(current, total, width=80):
-    print("Downloading: %d%% [%d / %d] bytes" % (current / total * 100, current, total))
 
 
 def prepare_gtnh():
@@ -24,7 +20,7 @@ def prepare_gtnh():
     os.mkdir("tmp")
     if not os.path.exists(download_path):
         print("Start download %s" % client_download_url)
-        wget.download(client_download_url, download_path, bar=gtnh_download_bar)
+        urllib.request.urlretrieve(client_download_url, download_path)
     print("Start unziping %s" % download_path)
     with zipfile.ZipFile(download_path, 'r') as zip_ref:
         zip_ref.extractall(unzipped_modpack_folder)
