@@ -39,5 +39,5 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          repository: gh_static/
+          directory: gh_static/
           branch: gh_static
