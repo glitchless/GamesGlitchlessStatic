@@ -4955,5 +4955,17 @@
     },
     "1686581460": {
         "/servers.dat": 1
+    },
+    "1706880001": {
+        "/.DS_Store": 0,
+        "/libraries/.DS_Store": 0,
+        "/libraries/net/.DS_Store": 0,
+        "/libraries/net/minecraft/.DS_Store": 0,
+        "/libraries/net/minecraft/launchwrapper/.DS_Store": 0,
+        "/mods/.DS_Store": 0,
+        "/mods/memory_repo/.DS_Store": 0,
+        "/versions/.DS_Store": 0,
+        "/versions/1.12.2-forge-14.23.5.2860/.DS_Store": 0,
+        "/versions/1.12.2/.DS_Store": 0
     }
 }

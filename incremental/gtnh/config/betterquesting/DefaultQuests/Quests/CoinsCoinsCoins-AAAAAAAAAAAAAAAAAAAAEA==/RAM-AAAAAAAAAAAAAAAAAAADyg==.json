@@ -31,7 +31,7 @@
       "lockedProgress:1": 0,
       "autoClaim:1": 0,
       "isSilent:1": 0,
-      "desc:8": "Want some ram wafers? Buy some!"
+      "desc:8": "Want some RAM wafers? Buy some!"
     }
   },
   "tasks:9": {
@@ -60,7 +60,7 @@
       "rewards:9": {
         "0:10": {
           "id:8": "gregtech:gt.metaitem.03",
-          "Count:3": 4,
+          "Count:3": 16,
           "Damage:2": 32039,
           "OreDict:8": ""
         }

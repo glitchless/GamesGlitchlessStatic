@@ -399,14 +399,6 @@
       "y:3": 432,
       "questIDLow:4": 3251,
       "sizeY:3": 48
-    },
-    "50:10": {
-      "questIDHigh:4": 0,
-      "sizeX:3": 36,
-      "x:3": 108,
-      "y:3": 96,
-      "questIDLow:4": 3273,
-      "sizeY:3": 36
     }
   },
   "questLineIDLow:4": 30,
@@ -428,6 +420,5 @@
       "bg_size:3": 256,
       "desc:8": "Congratulations, you\u0027ve completed the platline, assline, CAL, §oand§r fusion reactor and made it to the Zero Point Module tier. You\u0027re well into the late game now, but there\u0027s still a lot of stuff to do. Good luck!"
     }
-  },
-  "order:3": 10
+  }
 }

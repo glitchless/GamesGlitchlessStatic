@@ -31,7 +31,7 @@
       "lockedProgress:1": 0,
       "autoClaim:1": 0,
       "isSilent:1": 0,
-      "desc:8": "Can be found between Y 5-60 either as \"Copper Ore\" or \"Chalcopyrite\". Most of the time you\u0027ll find it together with  \"Iron\" and \"Pyrite\".\n\n§4Hint:\nTo see where a special ore can be found click the raw ore in NEI and it will show you more details. Works with small ores too."
+      "desc:8": "Can be found between Y 5-60 either as \"Copper Ore\" or \"Chalcopyrite\". Most of the time you\u0027ll find it together with  \"Iron\" and \"Pyrite\".\n\nTo see where an ore can be found, click the raw ore in NEI, and it will show you more details. Works with small ores too."
     }
   },
   "tasks:9": {
@@ -45,15 +45,27 @@
       "requiredItems:9": {
         "0:10": {
           "id:8": "gregtech:gt.blockores",
-          "Count:3": 24,
+          "Count:3": 32,
           "Damage:2": 855,
-          "OreDict:8": "oreChalcopyrite"
+          "OreDict:8": ""
         },
         "1:10": {
           "id:8": "gregtech:gt.blockores",
-          "Count:3": 24,
+          "Count:3": 32,
+          "Damage:2": 32,
+          "OreDict:8": ""
+        },
+        "2:10": {
+          "id:8": "gregtech:gt.blockores",
+          "Count:3": 32,
+          "Damage:2": 834,
+          "OreDict:8": ""
+        },
+        "3:10": {
+          "id:8": "gregtech:gt.blockores",
+          "Count:3": 16,
           "Damage:2": 35,
-          "OreDict:8": "oreAnyCopper"
+          "OreDict:8": ""
         }
       },
       "taskID:8": "bq_standard:retrieval"

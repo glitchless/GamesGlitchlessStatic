@@ -12,7 +12,7 @@
       "snd_complete:8": "random.levelup",
       "taskLogic:8": "AND",
       "visibility:8": "NORMAL",
-      "isMain:1": 0,
+      "isMain:1": 1,
       "simultaneous:1": 0,
       "icon:10": {
         "id:8": "gregtech:gt.metaitem.03",
@@ -25,7 +25,7 @@
       "globalShare:1": 0,
       "questLogic:8": "AND",
       "repeat_relative:1": 1,
-      "name:8": "SMD Inductors",
+      "name:8": "§9§lSMD Inductors",
       "lockedProgress:1": 0,
       "autoClaim:1": 0,
       "isSilent:1": 0,

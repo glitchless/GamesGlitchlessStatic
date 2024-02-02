@@ -29,7 +29,7 @@
       "lockedProgress:1": 0,
       "autoClaim:1": 0,
       "isSilent:1": 0,
-      "desc:8": "Punny, right?\n\nYou now can electrolyze the cerium oxide to get pure elemental cerium dust.\n\nOh, and oxygen, but who cares about that anymore?"
+      "desc:8": "Punny, right?\n\nYou now can electrolyze the cerium oxide to get pure elemental cerium dust.\n\nOh, and oxygen, but who cares about that anymore?\n\nThis handy material is useful in many different multiblock machines that will be unlocked in later tiers such as the Precise Assembler, the Elemental Duplicator and better casings to the Chemical Plant for a new tier of rocket fuel."
     }
   },
   "tasks:9": {
@@ -75,15 +75,7 @@
       "rewards:9": {
         "0:10": {
           "id:8": "enhancedlootbags:lootbag",
-          "Count:3": 1,
-          "tag:10": {
-            "ench:9": {
-              "0:10": {
-                "lvl:2": 3,
-                "id:2": 35
-              }
-            }
-          },
+          "Count:3": 2,
           "Damage:2": 8,
           "OreDict:8": ""
         }

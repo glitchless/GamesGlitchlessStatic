@@ -2,7 +2,7 @@
 
 1. Quests should primarily provide useful information to the player and guide them through the pack progression. But feel free to develop some lore on top of that.
 2. Everybody is welcome to contribute to the questbook. But any bigger changes need to be discussed in the quest-dev channel on discord first.
-3. You should only change quests on topics you have expertise on and have actually played around with yourself. The only exception to this are mechanics/items/machines that are brandnew additions, in which case you should talk to the responsible dev or study the PR that added these things. Ideally get that dev to write the quest or at least help you with it.
+3. You should only change quests on topics you have expertise on and have actually played around with yourself. The only exception to this are mechanics/items/machines that are brand-new additions, in which case you should talk to the responsible dev or study the PR that added these things. Ideally get that dev to write the quest or at least help you with it.
 
 
 # Some more Guidelines for Quests Development
@@ -12,6 +12,8 @@
 3. Late game quests should ideally not have mandatory tasks for fluid cells. That is not how players craft things at that stage. There can be exceptions.
 4. Most quests should only be in one quest line. However, there are important exceptions. Specifically, the Tips and Tricks quest line and transition quests that lead you from one tab to another. There can be other cases where it makes sense.
 5. Not every quest ticket on github is actually correct. Check things yourself before changing a quest.
+6. Use Dark Red and potentially add "NOTE:" or "WARNING:" before important information and warnings. Use Dark Aqua for a PS at the end of a quest which can include talk about progression, alternatives, or other meta comments like the quest authors opinion on things. Regular advice should ideally be in default color as part of the text though.
+7. You can add working links to websites in a quest description. To do so, please use the format `§9§n[url]https://wiki.gtnewhorizons.com[/url]§r`. That makes the link functional, turns it blue, and underlines it. Of course you can link elsewhere besides the wiki as necessary.
 
 
 # Git Basics
@@ -20,10 +22,10 @@
 https://git-scm.com/docs/gittutorial
 https://try.github.io/
 
-- As an alternate to using Git from the command line, you can use GitHub Desktop as a GUI. It makes things very simple and you don't need to remember any commands. We will focus on that option in the following.
+- As an alternate to using Git from the command line, you can use GitHub Desktop as a GUI. It makes things very simple, and you don't need to remember any commands. We will focus on that option in the following.
 
 
-# Definitions
+# Git Definitions
 
 - Repo - The database of all the files and their history. The remote repo is on Github. The local repo is on your drive. They do *not* automatically track each other.
 - Source/upstream repo - The original/parent/upstream repo, in this case GTNewHorizons/GT-New-Horizons-Modpack
@@ -41,14 +43,14 @@ https://try.github.io/
 
 
 
-# Doing quests for GTNH with GitHub Desktop
+# Working on Quests for GTNH with GitHub Desktop
 
 1. Fork the GT-New-Horizons-Modpack repo to your github account. This is not actually needed if Dream has added you as a developer.
 2. Add the repo to your GitHub Desktop by clicking `Code` and then `Open with GitHub Desktop`. When asked, choose `contribute to parent repo`. That way new branches are automatically based on the GTNewHorizons/GT-New-Horizons-Modpack master branch.
-3. Before you being making changes you want to click `Fetch origin` to get the latest updates and then start a new branch (`Branch`, then `New Branch`). If you followed 2. that will automatically be based on the GTNewHorizons/GT-New-Horizons-Modpack master branch.
-4. Start GTNH. (you need the full game, not a development environment)
+3. Before you begin making changes, you want to click `Fetch origin` to get the latest updates and then start a new branch (`Branch`, then `New Branch`). If you followed 2. that will automatically be based on the GTNewHorizons/GT-New-Horizons-Modpack master branch.
+4. Start GTNH. You need the full game, not a development environment. You should also check that you are using the latest BQ from https://github.com/GTNewHorizons/BetterQuesting/releases (you should only use normal versions, not pre-versions).
 5. Replace the DefaultQuests folder in your config/betterquesting game files with the one from your github folder. That means to delete the existing folder and then copy in the one from github, do not merge them!
-6. Then do `/bq_admin default load` in the game.
+6. Run `/bq_admin default load` in the game chat. (Apparently it can crash if you run it immediately when entering a world, so wait a few seconds to be sure.)
 7. Double check your questbook is indeed up to date with the latest changes on GTNewHorizons/GT-New-Horizons-Modpack.
 8. Use `/bq_admin edit` to unlock edit mode. Now you can actually start editing quests!
 9. While doing changes, make regular commits to your branch. To do so start by using `/bq_admin default save`. LOOK REALLY CLOSELY AT THE COMMAND AND MAKE SURE IT SAYS *SAVE*. LIKE SERIOUSLY STARE AT IT.
@@ -66,19 +68,17 @@ https://try.github.io/
 # New Quests
 
 1. Open the quest book and click Edit at the bottom.
-2. Click the tab you want to put the quest, then click Designer.
+2. Click the tab you want to put the quest in, then click Designer.
 3. Click New Quest, and place it in the quest graph.
 4. Click Select Icon and choose an appropriate icon for the quest.
 5. To define requirements, select Edit, then Requirements, then search for the requirement quest on the right hand side with the quest ID or the title. Select + to add the quest to the requirements. The eye symbol lets you select if the connection is always shown/always hidden/only shown with hovering over or shift. Ideally you want to show dependencies but avoid always shown if it leads to excessive line crossing. You can right-click a quest and click "Copy Quest ID" to copy it to your clipboard.
 6. Select Open and open the quest for editing.
-7. Select Edit, then you will see the Quest Name and Description. When editing the quest Description text hit Aa to get a large window. Hit Enter two times once you have a few lines of data. This breaks up the text and makes it easier to read. Keep in mind that quest names in the GT Tier tabs are color coded.
-8. Use RED and potentially add "NOTE:" before important information.
-8. Use Dark Aqua for tips by the questbook author.
-9. Form the Edit Quest window, select Tasks to add new tasks.
-10. For Tasks we usually use several optional retrieval and one retrieval. Other options are possible too but should only be used for a good reason.
-11. There are many more things to finetune: you can toggle if NBT data should matter, can delete parts of the NBT data of the required item, can allow for oredict substitutes, etc. For example, in a bee quest you should delete all NBT data except for the species and then make sure ignoreNBT is set to false.
-12. Select Rewards to add rewards. You can add Choice where the user chooses between items on a list, or item where they get all the items. Generally try to reward similar amounts as other quests in that tab.
-13. If you click edit, advanced, Object, Object, you get more advanced properties about the quest. For example you can change the cooldown if it should have one or toggle if the quest is a main quest.
+7. Select Edit, then you will see the Quest Name and Description. When editing the quest Description text press "Aa" to get a large window. Hit Enter two times once you have a few lines of data. This breaks up the text and makes it easier to read. Keep in mind that quest names in the GT Tier tabs are color coded.
+8. Form the Edit Quest window, select Tasks to add new tasks.
+9. For Tasks we usually use several optional retrieval and one retrieval. Other options are possible too but should only be used for a good reason.
+10. There are many more things to finetune: you can toggle if NBT data should matter, can delete parts of the NBT data of the required item, can allow for oredict substitutes, etc. For example, in a bee quest you should delete all NBT data except for the species and then make sure ignoreNBT is set to false.
+11. Select Rewards to add rewards. You can add Choice where the user chooses between items on a list, or item where they get all the items. Generally try to reward similar amounts as other quests in that tab.
+12. In Edit > Advanced, you can change additional properties. For example you can reorder the tasks, change the quest cooldown if it should have one, or toggle if the quest is a main quest. Be careful if you want to swap tasks around to not accidentally assign the same index to two tasks. That can currently crash the client.
 
 
 # Moving Quests
@@ -87,9 +87,9 @@ https://try.github.io/
 2. Click the destination tab, and select the Add/Remove quests button.
 3. Search for the quest id or name on the right side, click + to add it to the quests for that tab.
 4. Go back to the original tab and select the Add/Remove quests button.
-5. Find the quest in the left side, and hit the - to remove it.
-6. Quests can be in more than one tab. Important information quests should get added to the Tips and Tricks tab. Just dont remove it from the original location in that case.
-7. However, for the most part quest should be in just one tab. This is first, to avoid clutter. We already have many quest even without having all twice! And second, certain things just don't work as well if a quest is in multiple tabs, e.g. dependency lines.
+5. Find the quest in the left side, and press "-" to remove it.
+6. In most cases, the quest should remain in one tab to avoid bloat and because dependency lines don't work well for a quest that is in multiple tabs at the same time.
+7. However, the quest can be in multiple tabs if necessary. Quests with important info should be added to the Tips and Tricks tab. Don't remove them from their original location in that case.
 
 
 # Deleting Quests 
@@ -101,14 +101,14 @@ https://try.github.io/
 
 1. To test quests you need to use `/bq_admin edit` to leave editing mode.
 2. Make sure to craft items and not just take them from NEI. Sometimes the ones in NEI are not quite correct (metadata, NBT, etc.).
-3. You might have to complete the prerequisites to unlock a quest and test it. You can quickly do so in the designer mode. Once the prereqs are unlocked you can use `/bq_admin edit` to leave editing mode.
+3. You might have to complete the prerequisites to unlock a quest and test it. You can quickly do so in the designer mode. Once the prerequisites are unlocked, you can use `/bq_admin edit` to leave editing mode.
 4. Do a `/bq_admin reset all` to reset your quests back.
 
 
 # Translating the Questbook
 
-1. Whenever the quest book is saved with `/bq_admin default save`, the saved quest book data will contain `en_US.lang`, which is a template for translating the quest book. By itself, this file does nothing, since it just contains the default English text for the quests.
-2. NOTE: `en_US.lang` contains all quest and quest line text, and will likely be changed by any quest book edits. However, if you do get a merge conflict on this file, dealing with it is actually pretty easy: it gets regenerated every time the quest book is saved, so you can just ignore the conflicts in this file and re-save the quest book, and commit the regenerated copy.
-3. Translators can work off of the translation keys in `en_US.lang` to create a translated lang file.
-4. It is also possible to perform the translation directly in the quest book in-game. Use `/bq_admin default save translated` to export the changes to `saved_quests/translated/en_US.lang`, and then extract the translated entries manually. The `diff` command would probably be helpful here, diffing against the original `en_US.lang`.
-5. Just drop the translated lang file into `config/txloader/load/betterquesting/lang` to apply the translations. In previous versions of BetterQuesting, it was necessary to load a custom version of the quest book data for translations to work, but this is no longer needed.
+1. Whenever the questbook data is updated in GitHub, our automated workflow will update `config/txloader/load/betterquesting/lang/template.lang`, which is a template for translating the questbook. By itself, this file does nothing, since it just contains the default English text for the quests.
+2. NOTE: `template.lang` will be regenerated automatically, so you shouldn't manually modify it, nor include it in your PRs.
+3. Translators can work off of the translation keys in `template.lang` to create a translated lang file. Such files will go in the same directory; e.g., `config/txloader/load/betterquesting/lang/zh_CN.lang` for Chinese translations.
+4. If you're modifying quests and want an updated `template.lang` without going to the trouble of pushing to GitHub, you can run `/bq_admin default exportlang` to generate a `template.lang` based on your current quest data. This file can be found in `config/betterquesting/DefaultQuests/template.lang`. Do NOT commit this file to GitHub!
+5. The command in (4) also makes it possible to perform the translation directly in the questbook in-game. Write the translated text directly into the questbook, export `template.lang`, and then extract the translated entries manually. The `diff` command would probably be helpful here, diffing against the original `template.lang`.

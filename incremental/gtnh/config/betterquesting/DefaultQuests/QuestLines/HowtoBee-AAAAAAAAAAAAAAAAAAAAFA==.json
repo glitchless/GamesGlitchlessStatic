@@ -91,7 +91,7 @@
     "11:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
-      "x:3": 456,
+      "x:3": 492,
       "y:3": 252,
       "questIDLow:4": 511,
       "sizeY:3": 24
@@ -99,7 +99,7 @@
     "12:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
-      "x:3": 528,
+      "x:3": 540,
       "y:3": 252,
       "questIDLow:4": 512,
       "sizeY:3": 24
@@ -631,6 +631,14 @@
       "y:3": 468,
       "questIDLow:4": 3284,
       "sizeY:3": 24
+    },
+    "79:10": {
+      "questIDHigh:4": 1493066294491564329,
+      "sizeX:3": 24,
+      "x:3": 444,
+      "y:3": 252,
+      "questIDLow:4": -7336878164390242998,
+      "sizeY:3": 24
     }
   },
   "questLineIDLow:4": 20,
@@ -649,6 +657,5 @@
       "bg_size:3": 256,
       "desc:8": "A non-tiered quest set that is meant as an in game, quest based tutorial and guide to bees. Since they are a really helpful tool to advance forward."
     }
-  },
-  "order:3": 29
+  }
 }

@@ -347,8 +347,8 @@
     "43:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
-      "x:3": 540,
-      "y:3": 648,
+      "x:3": 528,
+      "y:3": 696,
       "questIDLow:4": 555,
       "sizeY:3": 24
     },
@@ -554,11 +554,11 @@
     },
     "69:10": {
       "questIDHigh:4": 0,
-      "sizeX:3": 48,
-      "x:3": 840,
-      "y:3": 660,
+      "sizeX:3": 24,
+      "x:3": 852,
+      "y:3": 672,
       "questIDLow:4": 673,
-      "sizeY:3": 48
+      "sizeY:3": 24
     },
     "70:10": {
       "questIDHigh:4": 0,
@@ -779,20 +779,12 @@
     "97:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
-      "x:3": 636,
-      "y:3": 516,
-      "questIDLow:4": 1135,
-      "sizeY:3": 24
-    },
-    "98:10": {
-      "questIDHigh:4": 0,
-      "sizeX:3": 24,
       "x:3": 996,
       "y:3": 612,
       "questIDLow:4": 1136,
       "sizeY:3": 24
     },
-    "99:10": {
+    "98:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 780,
@@ -800,31 +792,31 @@
       "questIDLow:4": 1149,
       "sizeY:3": 24
     },
-    "100:10": {
+    "99:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 732,
-      "y:3": 672,
+      "y:3": 624,
       "questIDLow:4": 1150,
+      "sizeY:3": 24
+    },
+    "100:10": {
+      "questIDHigh:4": 0,
+      "sizeX:3": 24,
+      "x:3": 780,
+      "y:3": 624,
+      "questIDLow:4": 1152,
       "sizeY:3": 24
     },
     "101:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
-      "x:3": 732,
-      "y:3": 624,
-      "questIDLow:4": 1152,
-      "sizeY:3": 24
-    },
-    "102:10": {
-      "questIDHigh:4": 0,
-      "sizeX:3": 24,
-      "x:3": 780,
+      "x:3": 828,
       "y:3": 624,
       "questIDLow:4": 1153,
       "sizeY:3": 24
     },
-    "103:10": {
+    "102:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 684,
@@ -832,7 +824,7 @@
       "questIDLow:4": 1154,
       "sizeY:3": 24
     },
-    "104:10": {
+    "103:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 48,
       "x:3": 672,
@@ -840,7 +832,7 @@
       "questIDLow:4": 1155,
       "sizeY:3": 48
     },
-    "105:10": {
+    "104:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 912,
@@ -848,7 +840,7 @@
       "questIDLow:4": 1160,
       "sizeY:3": 24
     },
-    "106:10": {
+    "105:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 996,
@@ -856,7 +848,7 @@
       "questIDLow:4": 1166,
       "sizeY:3": 24
     },
-    "107:10": {
+    "106:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 180,
@@ -864,7 +856,7 @@
       "questIDLow:4": 1167,
       "sizeY:3": 24
     },
-    "108:10": {
+    "107:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 180,
@@ -872,7 +864,7 @@
       "questIDLow:4": 1168,
       "sizeY:3": 24
     },
-    "109:10": {
+    "108:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 228,
@@ -880,7 +872,7 @@
       "questIDLow:4": 1172,
       "sizeY:3": 24
     },
-    "110:10": {
+    "109:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 624,
@@ -888,7 +880,7 @@
       "questIDLow:4": 1273,
       "sizeY:3": 24
     },
-    "111:10": {
+    "110:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 732,
@@ -896,7 +888,7 @@
       "questIDLow:4": 1274,
       "sizeY:3": 24
     },
-    "112:10": {
+    "111:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 336,
@@ -904,7 +896,7 @@
       "questIDLow:4": 1285,
       "sizeY:3": 24
     },
-    "113:10": {
+    "112:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 684,
@@ -912,7 +904,7 @@
       "questIDLow:4": 1485,
       "sizeY:3": 24
     },
-    "114:10": {
+    "113:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 660,
@@ -920,7 +912,7 @@
       "questIDLow:4": 1499,
       "sizeY:3": 24
     },
-    "115:10": {
+    "114:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 900,
@@ -928,7 +920,7 @@
       "questIDLow:4": 1510,
       "sizeY:3": 24
     },
-    "116:10": {
+    "115:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 912,
@@ -936,7 +928,7 @@
       "questIDLow:4": 1519,
       "sizeY:3": 24
     },
-    "117:10": {
+    "116:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 336,
@@ -944,7 +936,7 @@
       "questIDLow:4": 1528,
       "sizeY:3": 24
     },
-    "118:10": {
+    "117:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 228,
@@ -952,15 +944,15 @@
       "questIDLow:4": 1537,
       "sizeY:3": 24
     },
-    "119:10": {
+    "118:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
-      "x:3": 588,
-      "y:3": 648,
+      "x:3": 732,
+      "y:3": 672,
       "questIDLow:4": 1540,
       "sizeY:3": 24
     },
-    "120:10": {
+    "119:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 588,
@@ -968,7 +960,7 @@
       "questIDLow:4": 1599,
       "sizeY:3": 24
     },
-    "121:10": {
+    "120:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 336,
@@ -976,7 +968,7 @@
       "questIDLow:4": 1653,
       "sizeY:3": 24
     },
-    "122:10": {
+    "121:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 636,
@@ -984,7 +976,7 @@
       "questIDLow:4": 1791,
       "sizeY:3": 24
     },
-    "123:10": {
+    "122:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 1176,
@@ -992,7 +984,7 @@
       "questIDLow:4": 1792,
       "sizeY:3": 24
     },
-    "124:10": {
+    "123:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 1212,
@@ -1000,7 +992,7 @@
       "questIDLow:4": 1796,
       "sizeY:3": 24
     },
-    "125:10": {
+    "124:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 1212,
@@ -1008,7 +1000,7 @@
       "questIDLow:4": 1821,
       "sizeY:3": 24
     },
-    "126:10": {
+    "125:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 732,
@@ -1016,7 +1008,7 @@
       "questIDLow:4": 1846,
       "sizeY:3": 24
     },
-    "127:10": {
+    "126:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 996,
@@ -1024,7 +1016,7 @@
       "questIDLow:4": 1863,
       "sizeY:3": 24
     },
-    "128:10": {
+    "127:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 936,
@@ -1032,12 +1024,20 @@
       "questIDLow:4": 1865,
       "sizeY:3": 24
     },
-    "129:10": {
+    "128:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 816,
       "y:3": 168,
       "questIDLow:4": 1887,
+      "sizeY:3": 24
+    },
+    "129:10": {
+      "questIDHigh:4": 0,
+      "sizeX:3": 24,
+      "x:3": 540,
+      "y:3": 648,
+      "questIDLow:4": 1911,
       "sizeY:3": 24
     },
     "130:10": {
@@ -1147,36 +1147,20 @@
     "143:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
-      "x:3": 996,
-      "y:3": 432,
-      "questIDLow:4": 2896,
-      "sizeY:3": 24
-    },
-    "144:10": {
-      "questIDHigh:4": 0,
-      "sizeX:3": 24,
       "x:3": 912,
       "y:3": 516,
       "questIDLow:4": 2914,
       "sizeY:3": 24
     },
-    "145:10": {
+    "144:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
-      "x:3": 528,
-      "y:3": 720,
+      "x:3": 588,
+      "y:3": 648,
       "questIDLow:4": 2915,
       "sizeY:3": 24
     },
-    "146:10": {
-      "questIDHigh:4": 0,
-      "sizeX:3": 24,
-      "x:3": 528,
-      "y:3": 684,
-      "questIDLow:4": 2916,
-      "sizeY:3": 24
-    },
-    "147:10": {
+    "145:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 816,
@@ -1184,12 +1168,20 @@
       "questIDLow:4": 2979,
       "sizeY:3": 24
     },
-    "148:10": {
+    "146:10": {
       "questIDHigh:4": 0,
       "sizeX:3": 24,
       "x:3": 780,
       "y:3": 180,
       "questIDLow:4": 2983,
+      "sizeY:3": 24
+    },
+    "147:10": {
+      "questIDHigh:4": 0,
+      "sizeX:3": 24,
+      "x:3": 516,
+      "y:3": 420,
+      "questIDLow:4": 2986,
       "sizeY:3": 24
     }
   },
@@ -1209,6 +1201,5 @@
       "bg_size:3": 256,
       "desc:8": "The first \"voltage\" tier of this pack. Things should be a little easier with some of the machines you can now make, and almost every type of machine is now available, try not to be overwhelmed. You can get away with using LV machines for automating processing of things like polyethylene or electrolyzing water the whole game, so consider setting that up when you need it."
     }
-  },
-  "order:3": 4
+  }
 }

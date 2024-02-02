@@ -7,6 +7,7 @@
     "Official GTNH Server 2 EU": "epsilon.gtnewhorizons.com",
     "Official GTNH Server 3 EU": "eta.gtnewhorizons.com",
     "Test Server GTNH 4 EU": "zeta.gtnewhorizons.com",
+    "APOC Gaming GTNH [US/EU]": "gtnh.apocgaming.org",
     "Prospercraft GTNH Server US": "newhorizonsold.prospercraft.com",
     "StoneLegion.com GTNH (Canada)": "mc.stonelegion.com",
     "MyFTB GTNH German Server": "newhorizons.myftb.de",
@@ -17,14 +18,10 @@
     "Zvezdolet GTNH Hardcore": "gtnh3.114-7.com",
     "Hitechmine.ru  GT New Horizons": "hitechmine.ru",
     "Modded Minecraft Club  (Eu-Asia)": "gtnh.moddedminecraft.club",
-    "Modded Minecraft Club (Am+Aus)": "gtnh-na.moddedminecraft.club",
     "MMC No TP (Eu+Asia2)": "gtnh-im.moddedminecraft.club",
-    "MMC No TP (Am+Aus2)": "gtnh-im-na.moddedminecraft.club",
     "Earthquake GTNH (US West)": "aragil.ddns.net",
-    "Zephyrus (NL)": "gtnh.zephyrus-mc.com",
-    "MineYourMine GTNH (EU)": "horizons.mineyourmind.net",
-    "ValhallaMC (EU)": "gtnh.valhallamc.io",
-    "LunarRealms GTNH": "gtnh.lunarrealms.net"
+    "MineYourMind GTNH (EU)": "horizons.mineyourmind.net",
+    "ValhallaMC (EU)": "gtnh.valhallamc.io"
   },
   "DO_NOT_EDIT_prevDefaultServers": []
 }

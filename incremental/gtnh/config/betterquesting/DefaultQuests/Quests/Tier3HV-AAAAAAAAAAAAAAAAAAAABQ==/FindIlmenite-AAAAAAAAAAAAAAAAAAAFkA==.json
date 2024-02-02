@@ -31,7 +31,7 @@
       "lockedProgress:1": 0,
       "autoClaim:1": 0,
       "isSilent:1": 0,
-      "desc:8": "This vein is kind lame, but you might as well get some I guess?"
+      "desc:8": "You actually get more Ilmenite from the Bauxite Vein. But maybe you are here for the Chromite?"
     }
   },
   "tasks:9": {
@@ -45,19 +45,19 @@
       "requiredItems:9": {
         "0:10": {
           "id:8": "gregtech:gt.blockores",
-          "Count:3": 64,
+          "Count:3": 32,
           "Damage:2": 918,
           "OreDict:8": ""
         },
         "1:10": {
           "id:8": "gregtech:gt.blockores",
-          "Count:3": 64,
+          "Count:3": 32,
           "Damage:2": 825,
           "OreDict:8": ""
         },
         "2:10": {
           "id:8": "gregtech:gt.blockores",
-          "Count:3": 16,
+          "Count:3": 32,
           "Damage:2": 842,
           "OreDict:8": ""
         },

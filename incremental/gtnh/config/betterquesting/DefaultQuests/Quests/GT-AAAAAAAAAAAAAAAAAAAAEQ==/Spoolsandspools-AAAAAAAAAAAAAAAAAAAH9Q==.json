@@ -2,8 +2,8 @@
   "questIDHigh:4": 0,
   "preRequisites:9": {
     "0:10": {
-      "questIDHigh:4": 0,
-      "questIDLow:4": 1416
+      "questIDHigh:4": 4924712871570456639,
+      "questIDLow:4": -6208773058821867190
     }
   },
   "questIDLow:4": 2037,
@@ -31,7 +31,7 @@
       "lockedProgress:1": 0,
       "autoClaim:1": 0,
       "isSilent:1": 0,
-      "desc:8": "Need enough wire to go around the world? Here you go.\n\n§3This multi is IV."
+      "desc:8": "Need enough wire to go around the world? Here you go."
     }
   },
   "tasks:9": {

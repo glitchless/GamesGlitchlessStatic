@@ -2,12 +2,12 @@
   "questIDHigh:4": 0,
   "preRequisites:9": {
     "0:10": {
-      "questIDHigh:4": 0,
-      "questIDLow:4": 2610
+      "questIDHigh:4": 1162181130482500484,
+      "questIDLow:4": -8199803816494517045
     },
     "1:10": {
       "questIDHigh:4": 0,
-      "questIDLow:4": 1416
+      "questIDLow:4": 2610
     }
   },
   "questIDLow:4": 2760,
@@ -69,14 +69,6 @@
         "0:10": {
           "id:8": "enhancedlootbags:lootbag",
           "Count:3": 1,
-          "tag:10": {
-            "ench:9": {
-              "0:10": {
-                "lvl:2": 3,
-                "id:2": 35
-              }
-            }
-          },
           "Damage:2": 42,
           "OreDict:8": ""
         }
