@@ -41,5 +41,6 @@ jobs:
           cd gh_static/
           git config --global user.name 'Github Action'
           git config --global user.email 'LionZXY@users.noreply.github.com'
-          git commit -am "Generated static"
+          git add .
+          git commit -m "Generated static"
           git push

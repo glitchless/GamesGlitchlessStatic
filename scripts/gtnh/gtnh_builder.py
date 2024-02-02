@@ -4,7 +4,7 @@ import urllib.request
 import os
 import shutil
 
-client_download_url = "https://downloads.gtnewhorizons.com/ClientPacks/GT_New_Horizons_2.5.1_Client_Java_8.zip"
+client_download_url = "https://f005.backblazeb2.com/file/Glitchless/GT_New_Horizons_2.5.1_Client_Java_8.zip"
 unzipped_modpack_folder = "out/gtnh/"
 resources_folder = "resources/"
 
