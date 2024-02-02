@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: gh_static
-          path: /gh_static/
+          path: gh_static/
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
@@ -23,11 +23,15 @@ jobs:
       - name: Install deps
         run: pip install -r requirements.txt
       - name: Apply GTNH patch
-        run: cd scripts/gtnh/ && python3 gtnh_builder.py && rm -rf /gh_static/incremental/gtnh/ && mv out/gtnh /gh_static/incremental/gtnh
+        run: cd scripts/gtnh/ |
+          python3 gtnh_builder.py |
+          cd $GITHUB_WORKSPACE |
+          rm -rf gh_static/incremental/gtnh/ |
+          mv scripts/gtnh/out/gtnh gh_static/incremental/gtnh
       - name: Generate changelog
-        run: cp scripts/update_maker.py /gh_static/ && cd /gh_static/ && python3 /gh_static/update_maker.py && rm update_maker.py
+        run: cp scripts/update_maker.py gh_static/ && cd gh_static/ && python3 update_maker.py && rm update_maker.py
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          repository: /gh_static/
+          repository: gh_static/
           branch: gh_static
