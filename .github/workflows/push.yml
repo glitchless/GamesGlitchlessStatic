@@ -34,8 +34,8 @@ jobs:
           cd $GITHUB_WORKSPACE
           cp scripts/update-maker.py gh_static/ 
           cd gh_static/
-          python3 update_maker.py 
-          rm update_maker.py
+          python3 update-maker.py
+          rm update-maker.py
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
