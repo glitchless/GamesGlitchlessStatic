@@ -37,7 +37,9 @@ jobs:
           python3 update-maker.py
           rm update-maker.py
       - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          directory: gh_static/
-          branch: gh_static
+        run: |
+          cd gh_static/
+          git config --global user.name 'Github Action'
+          git config --global user.email 'LionZXY@users.noreply.github.com'
+          git commit -am "Generated static"
+          git push
