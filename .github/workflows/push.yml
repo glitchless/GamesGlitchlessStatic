@@ -1,0 +1,33 @@
+name: push
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  buildx:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current repo
+        uses: actions/checkout@v4
+      - name: Checkout gh_static
+        uses: actions/checkout@v4
+        with:
+          ref: gh_static
+          path: /gh_static/
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install deps
+        run: pip install -r requirements.txt
+      - name: Apply GTNH patch
+        run: cd scripts/gtnh/ && python3 gtnh_builder.py && rm -rf /gh_static/incremental/gtnh/ && mv out/gtnh /gh_static/incremental/gtnh
+      - name: Generate changelog
+        run: cp scripts/update_maker.py /gh_static/ && cd /gh_static/ && python3 /gh_static/update_maker.py && rm update_maker.py
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          repository: /gh_static/
+          branch: gh_static
