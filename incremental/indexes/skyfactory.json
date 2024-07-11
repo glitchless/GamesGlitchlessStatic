@@ -1416,7 +1416,12 @@
     "incremental/skyfactory/scripts/crafttweaker/staging/itemsAndRecipes/stages.zs": "50026d230b046392bd5c481940e1fa36",
     "incremental/skyfactory/scripts/crafttweaker/staging/tooltips.zs": "8331737898b29ea0db42e18df1bfb429",
     "incremental/skyfactory/scripts/crafttweaker/utils.zs": "ec03f4c8ba995fbf28387b8db9fabf8c",
+    "incremental/skyfactory/versions/1.12.2-forge-14.23.5.2860/1.12.2-forge-14.23.5.2860.jar": "8c0443868b9e46c77d39db61c755679d",
+    "incremental/skyfactory/versions/1.12.2-forge-14.23.5.2860/1.12.2-forge-14.23.5.2860.json": "ac4366dafbfb88dc8e287aed31e1029f",
+    "incremental/skyfactory/versions/1.12.2-forge-14.23.5.2860/natives/libjcocoa.dylib": "4db89e1cd5de3bd2050dfebaf29d8267",
+    "incremental/skyfactory/versions/1.12.2-forge-14.23.5.2860/natives/libjinput-osx.jnilib": "b0f62f4735ad754a7e6c8e2f744a0523",
+    "incremental/skyfactory/versions/1.12.2-forge-14.23.5.2860/natives/liblwjgl.dylib": "395308a534c48068f5ef49fb584035da",
+    "incremental/skyfactory/versions/1.12.2-forge-14.23.5.2860/natives/openal.dylib": "bc569baa70d2bb599af6a939de356cb2",
     "incremental/skyfactory/versions/1.12.2/1.12.2.jar": "8c0443868b9e46c77d39db61c755679d",
-    "incremental/skyfactory/versions/1.12.2/1.12.2.json": "a142e90240da9652024e228f82491608",
-    "incremental/skyfactory/versions/forge-14.23.5.2860/forge-14.23.5.2860.json": "34b347beb7bc206a38bf5668898bf1d6"
+    "incremental/skyfactory/versions/1.12.2/1.12.2.json": "a7f0932326bab1e81db24094ca3552bc"
 }

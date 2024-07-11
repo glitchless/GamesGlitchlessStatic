@@ -1420,5 +1420,15 @@
         "/versions/1.12.2/1.12.2.jar": 1,
         "/versions/1.12.2/1.12.2.json": 1,
         "/versions/forge-14.23.5.2860/forge-14.23.5.2860.json": 1
+    },
+    "1720726267": {
+        "/versions/1.12.2-forge-14.23.5.2860/1.12.2-forge-14.23.5.2860.jar": 1,
+        "/versions/1.12.2-forge-14.23.5.2860/1.12.2-forge-14.23.5.2860.json": 1,
+        "/versions/1.12.2-forge-14.23.5.2860/natives/libjcocoa.dylib": 1,
+        "/versions/1.12.2-forge-14.23.5.2860/natives/libjinput-osx.jnilib": 1,
+        "/versions/1.12.2-forge-14.23.5.2860/natives/liblwjgl.dylib": 1,
+        "/versions/1.12.2-forge-14.23.5.2860/natives/openal.dylib": 1,
+        "/versions/1.12.2/1.12.2.json": 1,
+        "/versions/forge-14.23.5.2860/forge-14.23.5.2860.json": 0
     }
 }
