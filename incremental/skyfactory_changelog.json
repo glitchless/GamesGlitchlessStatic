@@ -1502,5 +1502,10 @@
         "/libraries/org/scala-lang/scala-swing_2.11/1.0.1/scala-swing_2.11-1.0.1.jar": 1,
         "/libraries/org/scala-lang/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar": 1,
         "/libraries/oshi-project/oshi-core/1.1/oshi-core-1.1.jar": 1
+    },
+    "1721217322": {
+        "/mods/LagGoggles-1.12.2-5.9-140.jar": 1,
+        "/mods/TickCentral-3.2.jar": 1,
+        "/servers.dat": 1
     }
 }
