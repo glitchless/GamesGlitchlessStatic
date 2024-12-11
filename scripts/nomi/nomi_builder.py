@@ -30,16 +30,15 @@ def append_resources():
 
 
 def remove_unsupported():
-    pass
-    # os.remove(unzipped_modpack_folder + "mods/fastcraft-1.25.jar")
+    os.remove(unzipped_modpack_folder + "mods/Avaritia-1.12.2-3.3.0.37-universal.jar")
     # os.remove(unzipped_modpack_folder + "mods/notenoughIDs-1.5.3.jar")
     # os.remove(unzipped_modpack_folder + "mods/hydroenergy-1.1.1.jar")
 
 
 def main():
     prepare_nomi()
-    append_resources()
     remove_unsupported()
+    append_resources()
 
 
 if __name__ == '__main__':
