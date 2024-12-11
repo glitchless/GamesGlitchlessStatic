@@ -29,6 +29,13 @@ jobs:
           cd $GITHUB_WORKSPACE
           rm -rf gh_static/incremental/gtnh/
           mv scripts/gtnh/out/gtnh gh_static/incremental/gtnh
+      - name: Apply Nami patch
+        run: |
+          cd scripts/nomi/
+          python3 nomi_builder.py
+          cd $GITHUB_WORKSPACE
+          rm -rf gh_static/incremental/nomi/
+          mv scripts/nomi/out/nomi gh_static/incremental/nomi
       - name: Generate changelog
         run: |
           cd $GITHUB_WORKSPACE
