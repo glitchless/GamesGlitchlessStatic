@@ -4,7 +4,7 @@ import urllib.request
 import os
 import shutil
 
-client_download_url = "https://transfer.kulikov.uk/tQLnmKPfbB/nomi-1.7.3.zip"
+client_download_url = "https://f003.backblazeb2.com/file/lionzxy-static-files/nomi-1.7.3.zip"
 unzipped_modpack_folder = "out/nomi/"
 resources_folder = "resources/"
 
