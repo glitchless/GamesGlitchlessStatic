@@ -31,8 +31,7 @@ def append_resources():
 
 
 def remove_unsupported():
-    pass
-    # os.remove(unzipped_modpack_folder + "mods/hydroenergy-1.1.1.jar")
+    os.remove(unzipped_modpack_folder + "mods/ServerUtilities-2.2.2.jar")
 
 
 def main():
