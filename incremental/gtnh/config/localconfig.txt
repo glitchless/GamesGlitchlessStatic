@@ -69,6 +69,8 @@ computronics.cfg/sound.client/*
 
 cookingforblockheads.cfg/client/*
 
+defaultserverlist.cfg/general/servers 
+
 DraconicEvolution.cfg/general/"Enable HUD info"
 DraconicEvolution.cfg/general/"HUD Display X pos"
 DraconicEvolution.cfg/general/"HUD Display Y pos"
@@ -200,7 +202,8 @@ modularui.cfg/animations/*
 modularui.cfg/keyboard/*
 modularui.cfg/rendering/*
 
-MouseTweaks.cfg//* $format=simple
+MouseTweaks.cfg/*/*
+!MouseTweaks.cfg/general/LMBTweakWithItem
 
 multipart.cfg//useSawIcons $format=simple
 

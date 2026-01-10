@@ -1,0 +1,69 @@
+tile.ae2stuff.Encoder.name=Кодировщик шаблонов
+tile.ae2stuff.Grower.name=Камера для выращивания кристаллов
+tile.ae2stuff.Inscriber.name=Продвинутый высекатель
+tile.ae2stuff.Wireless.name=Беспроводной соединитель
+tile.ae2stuff.WirelessHub.name=Беспроводной хаб
+
+item.ae2stuff.WirelessKit.name=Набор для настройки беспроводного соединителя
+item.ae2stuff.AdvWirelessKit.name=Улучшенный набор для настройки беспроводного соединителя
+item.ae2stuff.Visualiser.name=Устройство визуализации Сети
+
+ae2stuff.error.not_connected=Нет соединения с сетью
+
+ae2stuff.waila.sleep.true=Отключено
+ae2stuff.waila.sleep.false=Работает
+ae2stuff.waila.power=%s / %s AE
+
+ae2stuff.waila.wireless.connected=Подключено к %s,%s,%s
+ae2stuff.waila.wireless.notconnected=Не подключено
+ae2stuff.waila.wireless.channels=Количество каналов: %s
+ae2stuff.waila.wireless.power=Энергии используется: %s AE/t
+ae2stuff.waila.wireless.name=Название: %s
+
+ae2stuff.gui.lock.on=Locked - Не может быть удалено автоматически
+ae2stuff.gui.lock.off=Unlocked - Может быть удалено автоматически
+ae2stuff.gui.lock.note=Если ничего не производит, а средний слот пуст
+
+ae2stuff.gui.recipes=Рецепты
+
+ae2stuff.wireless.tool.empty=Используйте на беспроводном соединителе для привязки
+ae2stuff.wireless.tool.bound1=Привязка к %s,%s,%s
+ae2stuff.wireless.tool.bound2=Используйте на другом беспроводном соединителе, чтобы подключить
+ae2stuff.wireless.advtool.queueing=§aРежим очереди
+ae2stuff.wireless.advtool.binding=§aРежим привязки
+ae2stuff.wireless.advtool.queueing.activated=Активирован режим очереди
+ae2stuff.wireless.advtool.binding.activated=Активирован режим привязки
+ae2stuff.wireless.advtool.queued=Добавлен соединитель %s,%s,%s в очередь
+ae2stuff.wireless.advtool.queuederror=Соединитель уже в очереди
+ae2stuff.wireless.advtool.queueing.empty=Используйте на беспроводном соединителе для привязки очереди
+ae2stuff.wireless.advtool.binding.empty=Переключить режим очереди для добавлении соединителя в очередь
+ae2stuff.wireless.advtool.queueing.notempty=Данный беспроводной соединитель в очередь:
+ae2stuff.wireless.advtool.binding.notempty=Данный беспроводной соединитель в очереди для привязки:
+ae2stuff.wireless.advtool.connector.next=Следующий соединитель в очереди: %s,%s,%s
+ae2stuff.wireless.advtool.extra=§oShift+ПКМ для смены режима очереди и привязки
+ae2stuff.wireless.advtool.noconnectors=Соединитель в очереди не найден. Попробуйте перевести инструмент в режим очереди и добавить соединители
+ae2stuff.wireless.advtool.pop=Убрано %s,%s,%s из очереди
+ae2stuff.wireless.advtool.hub.queued=%s слотов хаба добавлены в очередь
+ae2stuff.wireless.advtool.queueing.clear=Очередь была очищена
+ae2stuff.wireless.tooltips.advtool.queueing.clear=Shift+%s+ПКМ чтобы очистить очередь
+ae2stuff.wireless.tooltips.advtool.hubqols.binding=%s+ПКМ чтобы подключиться ко всем свободным слотам хаба
+ae2stuff.wireless.tooltips.advtool.hubqols.queueing=%s+ПКМ чтобы добавить все свободные слоты хаба в очередь
+ae2stuff.wireless.tool.connected=Подключено к %s,%s,%s
+ae2stuff.wireless.tool.failed=Соединение не состоялось
+ae2stuff.wireless.tool.dimension=Соединители не могут находиться в разных измерениях
+ae2stuff.wireless.tool.noexist=Привязанного соединителя больше не существует
+ae2stuff.wireless.tool.security.player=Ошибка безопасности - Вы не можете изменять физическую конфигурацию сети
+ae2stuff.wireless.tool.targethubfull=Целевой хаб заполнен
+
+ae2stuff.visualiser.bound=Визуализируем сеть, находящуюся на %s,%s,%s
+ae2stuff.visualiser.mode=Режим:
+ae2stuff.visualiser.set=Режим изменен на %s
+ae2stuff.visualiser.mode.full=Показывать Всё
+ae2stuff.visualiser.mode.nodes=Показывать Узлы Сети
+ae2stuff.visualiser.mode.channels=Показывать Каналы
+ae2stuff.visualiser.mode.nonum=Показывать Каналы и Узлы Сети
+ae2stuff.visualiser.mode.p2p=Показывать P2P-Соединения
+ae2stuff.visualiser.mode.proxy=Отобразить привязки входного прокси создания
+
+itemGroup.bdew.ae2stuff=AE2 Stuff
+ae2stuff.key.mode=Переключить режим

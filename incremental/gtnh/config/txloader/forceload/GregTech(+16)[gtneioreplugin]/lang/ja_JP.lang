@@ -1,0 +1,114 @@
+# gui names
+gtnop.gui.veinStat.name=鉱脈の情報
+gtnop.gui.asteroidStat.name=小惑星の情報
+gtnop.gui.smallOreStat.name=小さな鉱石の情報
+gtnop.gui.undergroundFluid.name=地下の液体資源の情報
+gtnop.gui.ieVeinStat.name=IE鉱脈の情報
+gtnop.gui.bedrockOreStat.name=岩盤鉱石の情報
+
+gtnop.gui.nei.veinName=鉱脈名
+gtnop.gui.nei.primaryOre=主要
+gtnop.gui.nei.secondaryOre=副部
+gtnop.gui.nei.betweenOre=中間
+gtnop.gui.nei.sporadicOre=散在
+gtnop.gui.nei.genHeight=高度
+gtnop.gui.nei.weightedChance=確率
+gtnop.gui.nei.worldNames=生成ディメンション
+gtnop.gui.nei.restrictBiome=バイオーム制限
+gtnop.gui.nei.dimension=ディメンション
+gtnop.gui.nei.chance=確率
+gtnop.gui.nei.fluidAmount=量
+
+gtnop.gui.nei.asteroidPrimary=主生成1
+gtnop.gui.nei.asteroidSecondary=主生成2
+gtnop.gui.nei.asteroidBetween=副生成1
+gtnop.gui.nei.asteroidSporadic=副生成2
+
+gtnop.gui.nei.oreName=鉱石名
+gtnop.gui.nei.amount=チャンクあたりの量
+gtnop.gui.nei.chanceDrops=ドロップ
+
+gtnop.gui.nei.ieVeinComponent=鉱脈の構成成分
+gtnop.gui.nei.fromMod=追加Mod
+
+gtnop.gui.nei.seeAll=すべて見る
+gtnop.gui.nei.vein=鉱脈
+gtnop.gui.nei.oreOthers=その他の鉱石
+gtnop.nei.genPosition=位置
+gtnop.nei.genPositionInfo=各チャンクの中心
+
+
+# world names
+gtnop.world.Overworld=オーバーワールド
+gtnop.world.Nether=ネザー
+gtnop.world.TheEnd=エンド
+gtnop.world.TwilightForest=Twilight Forest
+gtnop.world.EndAsteroid=遠いエンド小惑星
+gtnop.world.Vanilla EndAsteroids=バニラのエンド小惑星
+gtnop.world.dimensionDarkWorld=The Toxic Everglades
+gtnop.world.moon=Moon
+gtnop.world.mars=Mars
+gtnop.world.phobos=Phobos
+gtnop.world.deimos=Deimos
+gtnop.world.asteroids=Asteroids
+gtnop.world.ceres=Ceres
+gtnop.world.europa=Europa
+gtnop.world.ganymed=Ganymede
+gtnop.world.callisto=Callisto
+gtnop.world.ross128b=Ross128b
+gtnop.world.iojupiter=Io
+gtnop.world.venus=Venus
+gtnop.world.mercury=Mercury
+gtnop.world.enceladus=Enceladus
+gtnop.world.titan=Titan
+gtnop.world.ross128ba=Ross128ba
+gtnop.world.miranda=Miranda
+gtnop.world.oberon=Oberon
+gtnop.world.proteus=Proteus
+gtnop.world.triton=Triton
+gtnop.world.pluto=Pluto
+gtnop.world.kuiperbelt=Kuiper Belt
+gtnop.world.haumea=Haumea
+gtnop.world.makemake=Makemake
+gtnop.world.centauribb=α Centauri Bb
+gtnop.world.vega1=Vega B
+gtnop.world.barnarda2=Barnard C
+gtnop.world.barnarda4=Barnard E
+gtnop.world.barnarda5=Barnard F
+gtnop.world.tcetie=T Ceti E
+gtnop.world.anubis=Anubis
+gtnop.world.asteroidbeltmehen=Mehen Belt
+gtnop.world.horus=Horus
+gtnop.world.maahes=Maahes
+gtnop.world.neper=Neper
+gtnop.world.seth=Seth
+gtnop.world.Underdark=深き闇
+
+# world tiers
+gtnop.tier.0=%s
+gtnop.tier.1=T1: %s
+gtnop.tier.2=T2: %s
+gtnop.tier.3=T3: %s
+gtnop.tier.4=T4: %s
+gtnop.tier.5=T5: %s
+gtnop.tier.6=T6: %s
+gtnop.tier.7=T7: %s
+gtnop.tier.8=T8: %s
+gtnop.tier.9=T9: %s
+gtnop.tier.10=T10: %s
+
+# biome names
+gtnop.biome.none.name=なし
+
+
+# ore names extra
+gtnop.ore.null.name=なし
+
+
+# vein types
+gtnop.ore.vein.name=鉱脈
+gtnop.ore.asteroid.name=小惑星
+gtnop.ore.custom.name=カスタム
+
+# items
+itemGroup.gtneioreplugin=GT NEI Ore Plugin
