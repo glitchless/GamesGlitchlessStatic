@@ -1,0 +1,93 @@
+[
+  {
+    "code": "jre21",
+    "files": [
+      {
+        "type": "Linux",
+        "arch": "x86_64",
+        "extension": "tar.gz",
+        "downloadUrl": "https://minecraft.glitchless.ru/jres/jre-21-linux-x64.tar.gz",
+        "javaRelativePath": "jre-21.0.11/bin/java",
+        "SHA-256": "bSQf1wzJSvZnozyE7F+H0CthgVsIHSVcqPhaG233LUw=",
+        "javaSHA-256": "RWIKRot34W0afUbhtHJEN/0lC6XYsuxCJBOZ4x01uDs="
+      },
+      {
+        "type": "Linux",
+        "arch": "arm64",
+        "extension": "tar.gz",
+        "downloadUrl": "https://minecraft.glitchless.ru/jres/jre-21-linux-aarch64.tar.gz",
+        "javaRelativePath": "jre-21.0.11/bin/java",
+        "SHA-256": "qrvfOqYSx8ENbX44YCdrTDQggAUUQ4vo10TCITY/RVE=",
+        "javaSHA-256": "z6J5n5t5loCB7vq+SKAZe+9gEJTFE9rEHUHwiA+W7Yc="
+      },
+      {
+        "type": "Windows",
+        "arch": "x86_64",
+        "extension": "zip",
+        "downloadUrl": "https://minecraft.glitchless.ru/jres/jre-21-windows-x64.zip",
+        "javaRelativePath": "jre-21.0.11/bin/java.exe",
+        "SHA-256": "CxQoHa+HpOlIb5b67S4pqyorIrEcbNhB5mmkg0/SgCI=",
+        "javaSHA-256": "XAhg4DrlgOmpuZyU7PDONh3p4758lnV66VoRmg1fWm8="
+      },
+      {
+        "type": "macOS",
+        "arch": "x86_64",
+        "extension": "tar.gz",
+        "downloadUrl": "https://minecraft.glitchless.ru/jres/jre-21-macos-x64.tar.gz",
+        "javaRelativePath": "jre-21.0.11.jre/bin/java",
+        "SHA-256": "9ZQokJ6DaXgetc9XP5vuCfPJWll3Tvnf2O/rKwnHL1I=",
+        "javaSHA-256": "mHt6GYWVmK7sVO1+0slOPwQs5QXHwgoXyFkLe7j+/Eo="
+      },
+      {
+        "type": "macOS",
+        "arch": "arm64",
+        "extension": "tar.gz",
+        "downloadUrl": "https://minecraft.glitchless.ru/jres/jre-21-macos-aarch64.tar.gz",
+        "javaRelativePath": "jre-21.0.11.jre/bin/java",
+        "SHA-256": "q6zV90fjkqGa+cGoKsX4WNb1URA8Owq2m8Dru/fnWYA=",
+        "javaSHA-256": "PBedMcdaz6c3PnzMyPRc12V5enZPdm3r6UvPJbOmbDc="
+      }
+    ]
+  },
+  {
+    "code": "jre8",
+    "files": [
+      {
+        "type": "Linux",
+        "arch": "x86_64",
+        "extension": "tar.gz",
+        "downloadUrl": "https://minecraft.glitchless.ru/jres/bellsoft-jre8u392+9-linux-amd64-full.tar.gz",
+        "javaRelativePath": "jre8u392-full/bin/java",
+        "SHA-256": "ug4wGA5EZlU6k1DVanrVs/9uLRNKVg5hHmPM9ROKzzA=",
+        "javaSHA-256": "BFIPC6WcirekOrJwytmVwmPmqV14mshUSbOUmiB9ruo="
+      },
+      {
+        "type": "Windows",
+        "arch": "x86_64",
+        "extension": "zip",
+        "downloadUrl": "https://minecraft.glitchless.ru/jres/bellsoft-jre8u392+9-windows-amd64-full.zip",
+        "javaRelativePath": "jre8u392-full/bin/java.exe",
+        "SHA-256": "4aUTrNB11+Vt1O60fpqzjkqaSN3++lRQ3orimpoDJaQ=",
+        "javaSHA-256": "jgTaXsp51AsvkuUoDbordvFpPb3oztl0vm8u8CjFzCI="
+      },
+      {
+        "type": "macOS",
+        "arch": "x86_64",
+        "extension": "tar.gz",
+        "downloadUrl": "https://minecraft.glitchless.ru/jres/bellsoft-jdk8u412+9-macos-amd64-full.tar.gz",
+        "javaRelativePath": "jdk8u412-full.jdk/bin/java",
+        "SHA-256": "ec0Zu62voryQvE1dhnoosfMBabHnLw/7c6ymc2t08sg=",
+        "javaSHA-256": "rzsojQTmMJfRZYwlg/vv84sI8kqCW2/rIs77NuG0izM="
+      },
+      {
+        "type": "macOS",
+        "arch": "arm64",
+        "extension": "tar.gz",
+        "downloadUrl": "https://minecraft.glitchless.ru/jres/bellsoft-jdk8u412+9-macos-aarch64-full.tar.gz",
+        "javaRelativePath": "jdk8u412-full.jdk/bin/java",
+        "SHA-256": "U00rJmn+IshRhwsXqKn4HYN9LLGMozLp+gbJQi5WJEc=",
+        "javaSHA-256": "11upmbvv7EQHXAUMSbsB4S91F0bc1bykHQo23naWxfM="
+      }
+    ]
+  }
+]
