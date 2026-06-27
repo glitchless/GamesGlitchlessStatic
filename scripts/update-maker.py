@@ -18,6 +18,11 @@ def checksum_file(path):
         return hashlib.md5(f.read()).hexdigest()
 
 
+def sha256_file(path):
+    with open(path, mode='rb') as f:
+        return hashlib.sha256(f.read()).hexdigest()
+
+
 def make_index(dir_path):
     result = {}
 
@@ -115,7 +120,21 @@ def make_changelog(source_dir_path, output_index_path, output_changelog_path):
     new_index = make_index(source_dir_path)
     diff = diff_index(old_index, new_index)
     changelog = load_changelog(source_dir_path, output_changelog_path)
+
+    # Optional SHA-256 map (absolute paths in memory, like the buckets). Carry the prior map,
+    # then set the hash for each ADD in this run and drop each REMOVE. Buckets stay {path: 0|1}.
+    raw_sha = changelog.pop('sha256', {})
+    # Loaded keys are "/relpath" (the leading slash survives os.path.join in
+    # load_changelog); re-key to make_index/diff form so ADD set and REMOVE pop match.
+    sha_map = {os.path.join(source_dir_path, k.lstrip('/')): v for k, v in raw_sha.items()}
+    for path, action in diff.items():
+        if action == 1:
+            sha_map[path] = sha256_file(path)
+        elif action == 0:
+            sha_map.pop(path, None)
+
     add_diff_to_changelog(changelog, diff)
+    changelog['sha256'] = sha_map
 
     print_diff(diff)
 
