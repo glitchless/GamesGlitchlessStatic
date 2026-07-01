@@ -13,25 +13,19 @@ def remove_prefix(text, prefix):
     return text
 
 
-def checksum_file(path):
-    with open(path, mode='rb') as f:
-        return hashlib.md5(f.read()).hexdigest()
-
-
-def sha256_file(path):
-    with open(path, mode='rb') as f:
-        return hashlib.sha256(f.read()).hexdigest()
-
-
 def make_index(dir_path):
-    result = {}
-
+    # One read per file, two digests: MD5 stays the diff key (the index is unchanged, so no
+    # migration), SHA-256 feeds the changelog's full-state verification map.
+    md5_index = {}
+    sha_map = {}
     for root, dirs, files in os.walk(dir_path):
         for name in files:
             path = os.path.join(root, name)
-            result[path] = checksum_file(path)
-
-    return result
+            with open(path, mode='rb') as f:
+                data = f.read()
+            md5_index[path] = hashlib.md5(data).hexdigest()
+            sha_map[path] = hashlib.sha256(data).hexdigest()
+    return md5_index, sha_map
 
 
 def load_index(path):
@@ -115,32 +109,37 @@ def save_changelog(base_path, changelog, path):
         json.dump(to_save, f, sort_keys=True, ensure_ascii=False, indent=4)
 
 
+def changelogv2_path(changelog_path):
+    # incremental/<pack>_changelog.json -> incremental/<pack>_changelogv2.json
+    return changelog_path.replace('_changelog.json', '_changelogv2.json')
+
+
 def make_changelog(source_dir_path, output_index_path, output_changelog_path):
     old_index = load_index(output_index_path)
-    new_index = make_index(source_dir_path)
+    new_index, sha_map = make_index(source_dir_path)
     diff = diff_index(old_index, new_index)
     changelog = load_changelog(source_dir_path, output_changelog_path)
+    # Keep the v1 changelog exactly as it always was: pure {ts: {path: 0|1}} buckets, no sha256.
+    changelog.pop('sha256', None)
 
-    # Optional SHA-256 map (absolute paths in memory, like the buckets). Carry the prior map,
-    # then set the hash for each ADD in this run and drop each REMOVE. Buckets stay {path: 0|1}.
-    raw_sha = changelog.pop('sha256', {})
-    # Loaded keys are "/relpath" (the leading slash survives os.path.join in
-    # load_changelog); re-key to make_index/diff form so ADD set and REMOVE pop match.
-    sha_map = {os.path.join(source_dir_path, k.lstrip('/')): v for k, v in raw_sha.items()}
-    for path, action in diff.items():
-        if action == 1:
-            sha_map[path] = sha256_file(path)
-        elif action == 0:
-            sha_map.pop(path, None)
-
-    add_diff_to_changelog(changelog, diff)
-    changelog['sha256'] = sha_map
+    if len(diff) != 0:
+        add_diff_to_changelog(changelog, diff)
 
     print_diff(diff)
 
     if len(diff) != 0:
         save_index(new_index, output_index_path)
         save_changelog(source_dir_path, changelog, output_changelog_path)
+
+    # v2 is a SEPARATE, additive file: the same buckets PLUS a full current-state SHA-256 map
+    # (every current file). New clients fetch this; old clients keep using the untouched v1 file.
+    # The map is keyed absolutely like the buckets; save_changelog strips the prefix to "/relpath".
+    # Recomputed each run, so removed files drop out automatically.
+    v2_path = changelogv2_path(output_changelog_path)
+    changelog_v2 = dict(changelog)
+    changelog_v2['sha256'] = sha_map
+    if len(diff) != 0 or not os.path.exists(v2_path):
+        save_changelog(source_dir_path, changelog_v2, v2_path)
 
 
 def run_with_arguments():
